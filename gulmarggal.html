@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captivating Journeys</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            grid-auto-rows: 300px;
+        }
+
+        
+        .gallery-item {
+            position: relative;
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay span {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        
+        .gallery-item:nth-child(1) {
+            background-color: #ff9a9e;
+        }
+
+        .gallery-item:nth-child(2) {
+            background-color: #fad0c4;
+        }
+
+        .gallery-item:nth-child(3) {
+            background-color: #f4e1d2;
+        }
+
+        .gallery-item:nth-child(4) {
+            background-color: #c3f7f7;
+        }
+
+        .gallery-item:nth-child(5) {
+            background-color: #b0e0e6;
+        }
+
+        .gallery-item:nth-child(6) {
+            background-color: #ffecd2;
+        }
+
+        
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-container {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Gulmarg</h1>
+
+    <div class="gallery-container">
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/532959840/photo/gulmarg-high-peaks.jpg?s=612x612&w=0&k=20&c=WP0MGH2QBSzAqrtYG4Ryr17303VkwoCfkONyjiruo7I=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1041826306/photo/snowboarding-in-kashmir.jpg?s=612x612&w=0&k=20&c=onfp_G58HiI-6rqjgDfPLBU1ogBAKtxPnqKBbvBs8e4=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1189749646/photo/winter-ski-resort.jpg?s=612x612&w=0&k=20&c=ru2_IC4PtlxAkZEKvdYVvXW00lidTxye5ebpRwD-zcc=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1322526949/photo/snow-covered-himalayan-mountain-peaks-pir-panjal-mountain-range-view-from-gulmarg-kashmir.jpg?s=612x612&w=0&k=20&c=zA29WqTCTTaE-sl8kHcpBbXkCwEmEY7JfIaxQf1MhoE=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/665366534/photo/gandola-cable-car-in-gulmarg.jpg?s=612x612&w=0&k=20&c=15HVHYGv3e0AVTLI5B1W1RzIVAOsiAXvqFgfsbVsJYg=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/499377113/photo/village-in-the-middle-of-himalaya-mountains.jpg?s=612x612&w=0&k=20&c=VpbFQ7GpdHV4N26rnkPSr2tTEEVmIMZhtyf2q0rfde0=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1069235580/photo/snowboarding-in-kashmir.jpg?s=612x612&w=0&k=20&c=s8086VOtu0XlA-sSALe4CI1G93WfDJYH1Ob3_Sbg11U=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1437238414/photo/gulmarg-known-as-gulmarag-in-kashmiri-is-a-town-hill-station-popular-skiing-destination.jpg?s=612x612&w=0&k=20&c=OBgOXs4bXAaG0EPVZKfAutWF7WAd6-ydkwewMN_YwbA=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/532959878/photo/gulmarg-high-peaks.jpg?s=612x612&w=0&k=20&c=uQi-PwVPOhJBvba63DPg9k6Cyqud5v7UgE0xLiXnJ58=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1149569073/photo/beautiful-scenery-of-snowy-pine-trees-with-sunset-at-background.jpg?s=612x612&w=0&k=20&c=n0kOTvAbsErHnbj8svHzUnTzTOHi5YA3nWz4nR4mBWA=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1311915718/photo/natural-wonders.jpg?s=612x612&w=0&k=20&c=LaUqTq8hx-Ro5wHJSPo7FZenu_o572xJTc78p_7Its0=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1294428856/photo/gulmarg.jpg?s=612x612&w=0&k=20&c=9HZk_Mke16HuNmMeMG4ZeLuKj4kVAdm24mnQDnLz0Mw=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/471877577/photo/snowboarding.jpg?s=612x612&w=0&k=20&c=X6CXHiTzTvGrATc12w7mM-0jCDz0fnQiZRy9n14HOPw=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1439781161/photo/gulmarg-known-as-gulmarag-in-kashmiri-is-a-town-hill-station-popular-skiing-destination.jpg?s=612x612&w=0&k=20&c=DVS6f0X9dT1MtWuVfebOT8L_PVz0Nxk_UPtTpC8HtOM=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/472063335/photo/snowboarding.jpg?s=612x612&w=0&k=20&c=wbExVF_rppyvnsYKd7k28snL9TU4nJbIa3XIlfv6CRM=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/982785122/photo/snow-capped-mountains.jpg?s=612x612&w=0&k=20&c=_fuwY6_APDnnCeyzlxVa8D4MKJ15Y1v3CX0-vC9aY28=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1046638480/photo/snowboarding-in-kashmir.jpg?s=612x612&w=0&k=20&c=UGAgHWzTyhZV9CKlg1KcInFKSlEVtN7BsROJ48unPIk=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1324667221/photo/winter-season-gulmarg-is-a-town-a-hill-station-a-popular-tourist-skiing-destination-kashmir.jpg?s=612x612&w=0&k=20&c=GOayYaaUZTps2mPPZCoWo2tTqIavkf6hljrvhdhAbr0=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/184641232/photo/going-off-piste.jpg?s=612x612&w=0&k=20&c=QwfuqHIX2M1Vsi5oeeBw7lzYNrP-BZQMJ8wq1L7k8lo=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1134907076/photo/gulmarg-kashmir.jpg?s=612x612&w=0&k=20&c=ejItr-8gCzKxSwflr7T5gmeTlFi6ocbnMynCF2B7Ovo=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1055643432/photo/snowboarding-in-kashmir.jpg?s=612x612&w=0&k=20&c=Une2LM1nopHDUJWPyvbVKpOFQBECkB11ma8qkPdrQOA=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/858663930/photo/home-away-from-home.jpg?s=612x612&w=0&k=20&c=UlDphJT_bzdS8j7BrS16GKkMG9JCLIYAhLu2IwUy0Yw=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/665366468/photo/snow-covered-himalayan-mountains-and-pine-trees-in-gulmarg.jpg?s=612x612&w=0&k=20&c=JmKpNOpvIiGScZwu3TG3LdTALqEx3inh7XMjZvRN8Mg=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1495754646/photo/gulmarg-srinagar-kashmir-india.jpg?s=612x612&w=0&k=20&c=PzDHjGPw1xjz38lyRdbx0XWfI45BKJcllBkG-wLj_7g=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1324667553/photo/winter-season-gulmarg-is-a-town-a-hill-station-a-popular-tourist-skiing-destination-kashmir.jpg?s=612x612&w=0&k=20&c=PBVNImNvJUdebYoPURZeMdvMA93dCkrSw-8Mgw4ZDWo=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/839119368/photo/resort-outdoor-cascading.jpg?s=612x612&w=0&k=20&c=1c5irRF9TpUtcj52MTygUt7j7lNXK5im7Ty48f0anKY=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1177780471/photo/majestic-jhelum-river-a-tributary-of-the-indus-river-passes-through-the-kashmir-valley.jpg?s=612x612&w=0&k=20&c=ydl97W-qaiTiTjeWG0YqB0uIO3PaVlWAu7uYVoc4LOs=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1503382810/photo/beautiful-waterfall-on-the-way-to-gulmarg-kashmir.jpg?s=612x612&w=0&k=20&c=1_1qBYRnAzcSsrG8iAX9AeszI4Xu91K21r-8pO64xVM=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/177493954/photo/gulmarg-of-kashmir.jpg?s=612x612&w=0&k=20&c=zY8EJWLQbsCto1GxDtn8yLm5LUDXCF34GCoCONTQLk0=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/174957755/photo/gulmarg-after-snowfall.jpg?s=612x612&w=0&k=20&c=XS5c2RpqFu-8E6NCV8W2nH7eqW4w62UP9pT-V1bdacs=" alt="Amber Fort">
+        </div>
+
+
+    </div>
+
+</body>
+</html>

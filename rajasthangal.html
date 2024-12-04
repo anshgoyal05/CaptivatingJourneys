@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(135deg,#FF512F  0%,#DD2476 100%);
+}
+
+/* Gallery container */
+.gallery-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 5px;
+    color: #b7b1b1;
+    text-shadow: 2px 2px 4px white ;
+    font-size: 80px;
+}
+
+p {
+    margin-bottom: 30px;
+    color: #a49e9e;
+    text-shadow: 1px 1px 2px white ;
+    font-size: 60px;
+}
+
+/* Grid layout */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* Gallery item */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="https://plus.unsplash.com/premium_photo-1661962428918-6a57ab674e23?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1621427639820-fb18ffbe8a38?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://plus.unsplash.com/premium_photo-1661962388409-eb7a041606fb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://plus.unsplash.com/premium_photo-1661963050879-c6abd84f0261?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://plus.unsplash.com/premium_photo-1697729844084-c03db2377161?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1626521577925-39e2adc765bc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1705039379347-8ec747e29749?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://plus.unsplash.com/premium_photo-1697730388194-0f8f7943dbad?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1713703178572-6229a60ec44a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1671219823697-5894526ffeb4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1698054634378-1a3ca52f2d3d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1621926600808-1872f3302f1e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1635929620316-d34cecc5639b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1638518113045-efda0996eb75?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://plus.unsplash.com/premium_photo-1661953630194-4bef71f0440d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1622994899511-e6e93109ed12?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1652172328131-cba66c7c18c4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://plus.unsplash.com/premium_photo-1661962697678-9bf7f75eb561?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1603262110263-fb0112e7cc33?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/942152278/photo/gadisar-lake-at-jaisalmer-rajasthan-at-sunrise-with-ancient-temples-and-archaeological-ruins.jpg?s=612x612&w=0&k=20&c=HvhbHZ8HH_lAjAAI2pmqL4mUipyyAwy31qp5jjKQTO0=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/2099185596/photo/woman-walking-on-surrounding-wall-in-amber-jaipur.jpg?s=612x612&w=0&k=20&c=l-3mWzey5LsvJyxGaxfibsgbxe-uKCf78E-sKzg00mc=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/511119458/photo/indian-landmark-gadi-sagar-in-rajasthan.jpg?s=612x612&w=0&k=20&c=ti2VblM3zbzGiSjxmoaQlkDGdC_uEVSAlhzoaKWXFKM=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/1160319335/photo/tourist-enjoy-camel-ride-at-thar-desert-jaisalmer-rajasthan-at-sunset-with-view-of-camel.jpg?s=612x612&w=0&k=20&c=ezS944nGlDTcOC8vNiPwqS1z23EzoEpkHvHjDVnS51w=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/143176490/photo/camel-drivers-in-the-desert.jpg?s=612x612&w=0&k=20&c=cLspGLDFz3dvxWOB61z5pM7bUR6J7PlMqdqrnKktTXI=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/154894958/photo/amber-fort-jaipur-india.jpg?s=612x612&w=0&k=20&c=gCNirw30cmkl7clV30l8mcbmxOk-IAoT5ACxHRBQsdA=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/1994885798/photo/inside-view-of-deewan-e-khas-and-water-source-way-for-cooling-the-palace-nagaur-fort-or.jpg?s=612x612&w=0&k=20&c=-0QI9uLdd0EQmfDKMOiPmxYBqovWvq6eCoedhDK-6CE=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/1343698807/photo/mehrangarh-fort-with-jodhpur-city-scape-at-sunset-at-rajasthan-india.jpg?s=612x612&w=0&k=20&c=SsbjN63e-ht6PCPuVy25o9nBT_w-QRO8CRoV_CVDWzo=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/1154388717/photo/udaipur-city-palace-at-the-evening.jpg?s=612x612&w=0&k=20&c=l28caV42bYmCTrNPtbUSMEl6GXdPfTVrVwVCKWkC3qQ=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/2172378446/photo/amer-fort-jaipur-tourists-enjoy-elephant-ride-at-sunrise-indian-man-riding-on-elephant-near.jpg?s=612x612&w=0&k=20&c=dJO9dOsjpuGdTArwcN9C3dhA4icxngPcXvglfqq1x2Y=" alt="Gallery Image 1"></div>
+
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1672840892335-01031fe0f61c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            </div>
+         </div>
+</body>
+</html>

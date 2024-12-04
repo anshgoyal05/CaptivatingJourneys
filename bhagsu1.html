@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel blog sharing budget-friendly and luxury travel experiences, tips, and destinations including Dharamshala, scenic beauty, and more.">
+    <title>Captivating Journeys: Exploring the World on Any Budget</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #2c3e50, #4ca1af);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            animation: slideInDown 1s ease-out;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.4em;
+            font-style: italic;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        main:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: white;
+        }
+        h2, h3 {
+            color: #2c3e50;
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+        }
+        h2{
+            content: '';
+            display: block;
+            width: 0;
+            height: 4px;
+            background: #4ca1af;
+            transition: width 0.4s ease;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        h2:hover::after {
+            width: 100%;
+        }
+        p {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px 15px;
+            border-left: 5px solid #fda085;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        p:hover {
+            background: rgba(250, 235, 215, 0.9);
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            background: #f6d365;
+            margin: 10px 0;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: #2c3e50;
+            opacity: 0;
+            transform: translateX(-20px);
+            animation: fadeInSlide 0.5s forwards;
+        }
+        ul li:nth-child(1) { animation-delay: 0.2s; }
+        ul li:nth-child(2) { animation-delay: 0.4s; }
+        ul li:nth-child(3) { animation-delay: 0.6s; }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #2c3e50, #4ca1af);
+            color: white;
+            margin-top: 40px;
+            animation: slideInUp 1s ease-out;
+            box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+        }
+        footer p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        /* Animations */
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInSlide {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes slideInUp {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Exploring the World on Any Budget</h1>
+</header>
+
+<main>
+    <section>
+        <h2>Splurge-Worthy Experiences</h2>
+        <p>For those who wish to immerse themselves in nature, look no further than <strong>Bhagsu Waterfall</strong>. Scenic Beauty: Bhagsu Waterfall is a stunning natural site located just a short distance from McLeod Ganj. The waterfall is surrounded by lush greenery and offers a refreshing escape for nature lovers and photographers.</p>
+        <p>The waterfall is a popular trekking destination, requiring a short but picturesque hike through dense forests and rocky paths. The trek offers beautiful views of the surrounding mountains and valleys.</p>
+    </section>
+
+    <section>
+        <h2>Budget-Friendly Escapes</h2>
+        <p>The café is known for its laid-back, peaceful atmosphere, making it a favorite spot for backpackers, trekkers, and travelers seeking a break after visiting Bhagsu Waterfall. The tranquil environment, combined with the scenic views, makes it an ideal place to unwind.</p>
+        <p>For sports and nature lovers, the <strong>Dharamkot</strong> is a unique destination. Nestled in the hills, Dharamkot provides panoramic views of the Dhauladhar mountain range. The natural beauty of the area, with its lush greenery and scenic valleys, makes it a perfect spot for photography and nature lovers.</p>
+    </section>
+
+    <section>
+        <h2>Money-Saving Tips</h2>
+        <ul>
+            <li><strong>Timing is Key:</strong> Travel during shoulder seasons for lower prices and fewer crowds.</li>
+            <li><strong>Local Eats:</strong> Skip expensive restaurants and savor authentic cuisine at local markets or dhabas.</li>
+            <li><strong>Free Attractions:</strong> Many cities offer free walking tours, temples, and scenic viewpoints.</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Captivating Journeys. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

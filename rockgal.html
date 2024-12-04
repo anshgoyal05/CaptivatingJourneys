@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captivating Journeys</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            grid-auto-rows: 300px;
+        }
+
+        
+        .gallery-item {
+            position: relative;
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay span {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        
+        .gallery-item:nth-child(1) {
+            background-color: #ff9a9e;
+        }
+
+        .gallery-item:nth-child(2) {
+            background-color: #fad0c4;
+        }
+
+        .gallery-item:nth-child(3) {
+            background-color: #f4e1d2;
+        }
+
+        .gallery-item:nth-child(4) {
+            background-color: #c3f7f7;
+        }
+
+        .gallery-item:nth-child(5) {
+            background-color: #b0e0e6;
+        }
+
+        .gallery-item:nth-child(6) {
+            background-color: #ffecd2;
+        }
+
+        
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-container {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Rock Garden, Chandigarh</h1>
+
+    <div class="gallery-container">
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/471757663/photo/army-of-statuettes-in-chandigarh.jpg?s=612x612&w=0&k=20&c=Iyv5KPRyxxhyUfeu3IilLA2i6fGwUj9eX4rDbwZjnUM=" alt="Rock Graden">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1486545903/photo/rock-garden-chandigarh-in-the-evening.jpg?s=612x612&w=0&k=20&c=ObtsSMc6YFUUiHl0q_D9w9lCNeTeJMdO73G5CkuWZ1M=" alt="Rock Graden">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/497830694/photo/rocky-pathway.jpg?s=612x612&w=0&k=20&c=XKMKrQB9OiQ9bnUE3jfVzPWsDCXMOjIDlCnDdcplw5o=" alt="Rock Graden">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2164743682/photo/beautiful-view-of-the-pattern-of-soil-pots-in-rock-garden-built-by-government-official-nek.jpg?s=612x612&w=0&k=20&c=WVizS_f5PMZFAshiiurdQ5u9xRAIPSspNO1ApRmxFGU=" alt="Rock Graden">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1486546129/photo/rock-garden-chandigarh-in-the-evening.jpg?s=612x612&w=0&k=20&c=SpW8hE1lXEk8l1D_jdK1SphOpboQKp-PtGPyDu2WH6k=" alt="Rock Graden">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2164743698/photo/tiny-huts-built-from-rocks-inside-the-rock-garden-chandigarh-india.jpg?s=612x612&w=0&k=20&c=aD0Vb_DxejEtHIBQNMs64ULA9ch895a-k-1yOlhpHxE=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2164743689/photo/man-made-waterfall-inside-the-rock-garden-chandigarh-india.jpg?s=612x612&w=0&k=20&c=8eFAJQj-0pluSwywyp-y2Q8SKs_a2x2UILF8nXjdL_U=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2164743684/photo/swimming-pool-made-from-waste-materials-inside-the-rock-garden-chandigarh-india.jpg?s=612x612&w=0&k=20&c=jmVM2JhEAg-AluLV2gzH5Vn6hZlhXmQt9mka_XqDd1g=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2164743695/photo/beautiful-architectural-designs-built-inside-the-rock-garden-chandigarh-india.jpg?s=612x612&w=0&k=20&c=0jMErdKoCIKfMzvSblh0xyT0zDGG1Sw2EOule-9JLU8=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/600414672/photo/rock-garden-chandigarh.webp?a=1&b=1&s=612x612&w=0&k=20&c=9Nx4WotOMCauOK_4piFRu37S25Ksqw4y39xw-kfMrEM=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1050322654/photo/rock-garden.webp?a=1&b=1&s=612x612&w=0&k=20&c=zgWsQKWU0qzUKPL8pxqmbHJrSGAfNXd_KeWazODKmYM=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/519914379/photo/concrete-web.webp?a=1&b=1&s=612x612&w=0&k=20&c=k71xTwkEsZaaj761lY9Q8HKexnavRdKRGQk8GGjQT7Q=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/539345228/photo/rock-garden-in-chandigarh-india.jpg?s=612x612&w=0&k=20&c=AoA9rThsx6MvhMCVjxgTHkMjUbn-zYnjqzj7RMyCvlQ=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2164743695/photo/beautiful-architectural-designs-built-inside-the-rock-garden-chandigarh-india.jpg?s=612x612&w=0&k=20&c=0jMErdKoCIKfMzvSblh0xyT0zDGG1Sw2EOule-9JLU8=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1403198797/photo/rock-garden-situated-at-chandigarh-india.jpg?s=612x612&w=0&k=20&c=rfTLaA-WgNe0sNnhLX02pEfyyN15CYrHFhSLjTGuYCI=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/539345530/photo/rock-garden.jpg?s=612x612&w=0&k=20&c=X6JbwVt7nfxTmvGVNYW4g9yYUO3OzPw3I8BG_A3t6J0=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1141957356/photo/variations-pottery-the-rock-garden-chandigarh.jpg?s=612x612&w=0&k=20&c=dfUVl5r9aPSJDWsLrKFNOUAXmYSGvGxYQVoLgs6JqtA=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/492093458/photo/nek-chand-fantasy-rock-garden.jpg?s=612x612&w=0&k=20&c=_NBnmqQU5JDBD1RYqQcR9_F3HSImq-lo_mz-QfO2OM4=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1199678536/photo/children-playing-hide-and-seek.jpg?s=612x612&w=0&k=20&c=JCzGzkabI5ylTBghaUqFOQ_LcswtAyOm53jh-7GdQWw=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2164743687/photo/rock-carving-inside-the-rock-garden-and-a-small-passage-chandigarh-india.jpg?s=612x612&w=0&k=20&c=PYYmr6kbhql5h4uHod3oEObWUjq2YZ8SE01JUN8wpFM=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1403198802/photo/rock-garden-situated-at-chandigarh-india.jpg?s=612x612&w=0&k=20&c=_5jDCkj5SS6OTfJj80Sxc8GCtigNs7gdLxsSqMKOc2Y=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1403198798/photo/rock-garden-situated-at-chandigarh-india.jpg?s=612x612&w=0&k=20&c=l7Ma4eZIPVL8770ZZjt3fLfG_UtSL6Hwie1WGmtbQTM=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/539345006/photo/rock-garden-in-chandigarh-india.jpg?s=612x612&w=0&k=20&c=48X5e0jIZguG72uB_MknvL3kfKNaY1ihDWEyVc-FQpM=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1490919417/photo/zakir-hussain-rose-garden-chandigarh.jpg?s=612x612&w=0&k=20&c=8mPKtRMNytmAlNimfU_Ho43hGewCcoC-P9X7gsv8w8Q=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1182342214/photo/dramatic-beautiful-sky-with-clouds-and-blue-patches-in-between-over-a-hilly-green-terrain.jpg?s=612x612&w=0&k=20&c=Gon0pEnB2G5NqV5i3fUt0V3O9ZNk1TPmUZUTbLhrX8Y=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/539344774/photo/waterfall-in-rock-garden.jpg?s=612x612&w=0&k=20&c=JsGMt1IqcWWSE9sV-wSLXNwel5OL4KT5NClVcZhMc-c=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1330901598/photo/japanese-garden-in-chandigarh-india.jpg?s=612x612&w=0&k=20&c=icWEaX5NgEaW_WEoJny8nT6W0ZbVWFzQ98fT1CXA68I=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1716131985076-07350de31afd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1672799768719-c2d41c309bef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDUxfHx8ZW58MHx8fHx8" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1588669494151-f4c6df6f715b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyNHx8fGVufDB8fHx8fA%3D%3D" alt="Rock Graden">
+        </div>
+
+
+    </div>
+
+</body>
+</html>

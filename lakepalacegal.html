@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captivating Journeys</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            grid-auto-rows: 300px;
+        }
+
+        
+        .gallery-item {
+            position: relative;
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay span {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        
+        .gallery-item:nth-child(1) {
+            background-color: #ff9a9e;
+        }
+
+        .gallery-item:nth-child(2) {
+            background-color: #fad0c4;
+        }
+
+        .gallery-item:nth-child(3) {
+            background-color: #f4e1d2;
+        }
+
+        .gallery-item:nth-child(4) {
+            background-color: #c3f7f7;
+        }
+
+        .gallery-item:nth-child(5) {
+            background-color: #b0e0e6;
+        }
+
+        .gallery-item:nth-child(6) {
+            background-color: #ffecd2;
+        }
+
+        
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-container {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lake Palace, Udaipur</h1>
+
+    <div class="gallery-container">
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/137274145/photo/udaipur-lake-palace.jpg?s=612x612&w=0&k=20&c=JAQRMp2zUnXkb45dGFuVFeow9sH26fo1UieBO6fa70Q=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2165410657/photo/dusk-shot-of-lake-pichola-with-boats-moving-and-leela-palace-oberoi-in-distance-with-sajjan.jpg?s=612x612&w=0&k=20&c=ATFNTydKr8jNSjqrifLQ92lt3R2QNcgKAEwEMy22MUM=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/530414388/photo/lake-palace-in-udaipur.jpg?s=612x612&w=0&k=20&c=nYLeFjTQ9VRsliXLhy3ocf43PiWqv20lw3c448pfVKM=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/157569856/photo/udaipur-lake-palace.jpg?s=612x612&w=0&k=20&c=VvMTA1DugiV3a68Hk-glWmHzbQ49v3oC5cTsDgVGNas=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1288490862/photo/lake-palace-on-pichola-lake-udaipur-india.jpg?s=612x612&w=0&k=20&c=ehhqyA95jKLaf3RY5XoXzl-5-3bJyazwD3Wk6rkXaPU=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/907077030/photo/hotels-on-the-banks-of-lake-pichola-udaipur-at-dusk.jpg?s=612x612&w=0&k=20&c=WAWYihjjV-AiLwGfJ98y8oB3MTgZcIME5IXAHCAPGzA=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1137780002/photo/couple-look-out-to-floating-palace-on-lake-at-sunset.jpg?s=612x612&w=0&k=20&c=hzeX7jf-aM7bYleuHwgsKOFCD1HLnMMiFA0Box9wflY=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2165410651/photo/jagmandir-island-palace-with-beautiful-lights-reflected-in-water-with-arches-elephant-statues.jpg?s=612x612&w=0&k=20&c=BUJnHzo1-FqlQAFyDDYmBixvK2hkf_EZ-17RgZSoOtc=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2163653745/photo/city-palace-lake-palace-and-lake-pichola-udaipur-india.jpg?s=612x612&w=0&k=20&c=tEmmVEjpoQWsQpogVSs0Wb4pjRKZo6mqBWxJXFBF43E=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1892892304/photo/jal-mahal-pichola-lake-udaipur.jpg?s=612x612&w=0&k=20&c=faR8t0OVEyifoNnK3NWkYs4zDvVN6ayDu4DT69iHbwk=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1892808835/photo/taj-lake-palace-on-lake-pichola-in-udaipur-rajasthan-india.jpg?s=612x612&w=0&k=20&c=yKNS0diCezbhTpY4NnyR8Jaw6chXwf4HSU5-3eRrklQ=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/172397412/photo/udaipur.jpg?s=612x612&w=0&k=20&c=lnQJP8aRM9bbH61uUKSA47dnPAuBXKHE-sj67gEk-1M=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1682688441/photo/lake-palace-in-udaipur-rajasthan-india.jpg?s=612x612&w=0&k=20&c=1l8TEm0o7qkYjQGknoZFvYQPtq-IG8w3bw8uNc5bPiA=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/487487153/photo/lake-palace-udaipur-india.jpg?s=612x612&w=0&k=20&c=FjutVeoDyFnwjCOZuVJ3PV4sanAJVVx6_gNd51m1OfA=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1666864164/photo/taj-lake-palace-located-in-the-middle-of-lake-pichola-udaipur-rajasthan-india.jpg?s=612x612&w=0&k=20&c=IbFlQlkDdlcwnpgl8PPaJfCH6XHsUSAzMIYuAwUFfU8=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/184330053/photo/udaipur-lake-pichola-at-sunrise.jpg?s=612x612&w=0&k=20&c=B8SXwM8brtw0h9PjiHnWHpodMEadRDuVzTbP_1TcWkA=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/181187421/photo/the-lake-palace-udaipur-rajasthan.jpg?s=612x612&w=0&k=20&c=LnWAJ1_nCNBjCFrxurdFvIE_kFHHxHqkYlLIVdOIqVI=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/468988272/photo/view-from-lake-palace-india.jpg?s=612x612&w=0&k=20&c=zSZdYEASbu9y-iHksaEKa5CNxCW_L7SCdzHHDVSuE28=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/158225907/photo/lake-palace-in-udaipur-india.jpg?s=612x612&w=0&k=20&c=VBxWnz2Gg1QnkHWsykYQhTR6wCtXGmBmSe_qMChXzzs=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1593317616/photo/palace-on-lake-pichola.jpg?s=612x612&w=0&k=20&c=Aleh5fL_wb5uxUu7ZJmiej7uJscYYZlLvs2sPB8FNHQ=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/182494376/photo/udaipur-lake-palace.jpg?s=612x612&w=0&k=20&c=enwjjh9R9xVzhnsrBOYHOD_foHDt8HBm60pWe7Cwpko=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/96669695/photo/luxury-palace-courtyard.jpg?s=612x612&w=0&k=20&c=CAAsyEccQsjiIXST3omGGYzmYNgcad8SrucOyEOxCAs=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1172960775/photo/taj-lake-palace-jag-niwas-in-udaipur-rajasthan-state-india.jpg?s=612x612&w=0&k=20&c=8ckcHbLyTm_rRyxPrdN-s5yyVYGEnqZ3qoEd-971xkQ=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/538746121/photo/lake-palace-jagniwas-island-udaipur-rajasthan-india.jpg?s=612x612&w=0&k=20&c=0SIZbzpuAUvt904parXlNQg5_SokgzvQjSefqSyvXKM=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/479590816/photo/jal-mahal-in-the-evening.jpg?s=612x612&w=0&k=20&c=bjpLGnsv_dwBnRKlxj0GUV3WP5Xed3De8wrH9l4TzRo=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1222475991/photo/pigeons-fly-above-lake-pichola.jpg?s=612x612&w=0&k=20&c=55-VPmoH4LC1CCW9sxDlyHPN2Zt8Gc66Xg-kTT-3yeQ=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/172267901/photo/udaipur-lake-palace-at-night.jpg?s=612x612&w=0&k=20&c=eLlWY5PoBDTf7bLjR-grGzdjY1v-j5CY3wgwZvuNuLE=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1152608466/photo/image-of-the-taj-lake-palace-viewed-from-jag-mandir-lake-pichola-udaipur-rajasthan-india.jpg?s=612x612&w=0&k=20&c=JIwbsQ44LC7WJGg0kWWO0wsteLzwWoMHiy4CoWs6CXM=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/543823672/photo/lake-palace-in-udaipur.jpg?s=612x612&w=0&k=20&c=Z1MddiiPJMOpizYpiraQ9M1_3aOfgRyVi29Y3vyed4A=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/119556086/photo/lake-palace-terrace.jpg?s=612x612&w=0&k=20&c=EEDVdBIWOE2HP7ebRu9YhYdJfeI0fvecVjgFvjHQ9IU=" alt="Amber Fort">
+        </div>
+
+
+    </div>
+
+</body>
+</html>

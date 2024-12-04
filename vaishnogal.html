@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captivating Journeys</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            grid-auto-rows: 300px;
+        }
+
+        
+        .gallery-item {
+            position: relative;
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay span {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        
+        .gallery-item:nth-child(1) {
+            background-color: #ff9a9e;
+        }
+
+        .gallery-item:nth-child(2) {
+            background-color: #fad0c4;
+        }
+
+        .gallery-item:nth-child(3) {
+            background-color: #f4e1d2;
+        }
+
+        .gallery-item:nth-child(4) {
+            background-color: #c3f7f7;
+        }
+
+        .gallery-item:nth-child(5) {
+            background-color: #b0e0e6;
+        }
+
+        .gallery-item:nth-child(6) {
+            background-color: #ffecd2;
+        }
+
+        
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-container {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Vaishno Devi</h1>
+
+    <div class="gallery-container">
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1319981113/photo/vaishno-you-have-to.jpg?s=612x612&w=0&k=20&c=JBtT5KhYJHS5g9SEViEXNfOVRY5yseQhSmaXnlkwrPA=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1718783627/photo/vaishno-devi-temple.jpg?s=612x612&w=0&k=20&c=UuK0bwMc9zL5QubDfUkOibn9YjSelA88w2Pxz1zImQU=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1295459152/photo/evening-view-of-katra-town.jpg?s=612x612&w=0&k=20&c=LYCokye0zJ9DfvxTLePiNqRPjcp4cmyUrfPoMt7D5Sk=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1295459217/photo/evening-view-of-katra-town.jpg?s=612x612&w=0&k=20&c=UGXdZW9N5SpjKykLfsvd1Opvzgi1_ldl2m3t03RboQQ=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1295459166/photo/evening-view-of-katra-town.jpg?s=612x612&w=0&k=20&c=StluVCyfR6XYPupoDC9fryUDp4jqw-Aa1CZGX4ZR1h0=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223652170/photo/scenic-aerial-scene-river-between-two-mountains-of-himalayas-aerial-view-crystal-clear-water.jpg?s=612x612&w=0&k=20&c=FIvxnhGbOXCUbOt7NWqBYd1TPWDgKhNTzDT4VnsVJrQ=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223660705/photo/roads-covered-by-snow-between-mountains-of-patnitop-and-nathatop-jammu.jpg?s=612x612&w=0&k=20&c=74GbGOwtzqxsf_4Qf9bRhuSXhJAjn3S0CM-BmUyluS0=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223784881/photo/beautiful-sunset-view-at-mata-vaishnodevi-darbar-katra-jammu.jpg?s=612x612&w=0&k=20&c=CinCE93ONWrkEdrKS-br-7K5vNqrQUAReMFYS3v6Jiw=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1295459166/photo/evening-view-of-katra-town.jpg?s=612x612&w=0&k=20&c=StluVCyfR6XYPupoDC9fryUDp4jqw-Aa1CZGX4ZR1h0=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223657296/photo/scenic-aerial-scene-river-between-two-mountains-of-himalayas-aerial-view-crystal-clear-water.jpg?s=612x612&w=0&k=20&c=0VKRyrBylH94H8xghsQ2Idq9TNIk_Kq7kfdjf9vFZRA=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223784892/photo/beautiful-sunset-view-at-mata-vaishnodevi-darbar-katra-jammu.jpg?s=612x612&w=0&k=20&c=tCl7Cv22BHzS6Y5l4EmnFgqsiU-4WkoNzm6A6Xxbmk8=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1417554624/photo/beautiful-landscape-view-of-shri-mata-vaishno-devi-katra-railway-station-in-india.jpg?s=612x612&w=0&k=20&c=9CRjiZ-h3Xmv5jYbmneySBpWFF6_e_uZAByjHiFlxgQ=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223657010/photo/roads-covered-by-snow-between-mountains-of-patnitop-and-nathatop-jammu.jpg?s=612x612&w=0&k=20&c=zOQVQbL1kiQprw3Oua6R83U0lHhqRwVnE7FyT_HothQ=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223657011/photo/roads-covered-by-snow-between-mountains-of-patnitop-and-nathatop-jammu.jpg?s=612x612&w=0&k=20&c=quYZ_0i8G8yb_jugawMu-KJglAEeEE5GeuHIUoNaayw=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223783905/photo/beautiful-sunset-view-at-mata-vaishnodevi-darbar-katra-jammu.jpg?s=612x612&w=0&k=20&c=fCPySAEtbhUyVQa4UrR-ke-jxTUij0vSGkhG5NA9FSg=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223782416/photo/beautiful-sunset-view-at-mata-vaishnodevi-darbar-katra-jammu.jpg?s=612x612&w=0&k=20&c=PJrhHmZo7Hg1mpcLgMi0Zb0uPSKhFweCc-qRa5PNQ90=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223785240/photo/beautiful-sunset-view-at-mata-vaishnodevi-darbar-katra-jammu.jpg?s=612x612&w=0&k=20&c=FwRdjGzRda-eFwrBFOHGR1VGcK9PulUxIi69KxnvEQ4=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223782617/photo/beautiful-sunset-view-at-mata-vaishnodevi-darbar-katra-jammu.jpg?s=612x612&w=0&k=20&c=9plmvpeE-iwg4tIYdtKPyr0w6qBsBy7C3lstZzjBo-U=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223782559/photo/beautiful-sunset-view-at-mata-vaishnodevi-darbar-katra-jammu.jpg?s=612x612&w=0&k=20&c=msQpP5PmDU7cKdd8_orVAiObuSMUpQpyGYCYSGTl-Kk=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223782302/photo/beautiful-sunset-view-at-mata-vaishnodevi-darbar-katra-jammu.jpg?s=612x612&w=0&k=20&c=WawDX26t-bAld86AVWykmeamyKo3pcqk0Z_41Ni4TXs=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223783442/photo/beautiful-sunset-view-at-mata-vaishnodevi-darbar-katra-jammu.jpg?s=612x612&w=0&k=20&c=ImuKwlBZlRNav-aohMI89jUb2uplygw-t0vAjt8iteI=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223784242/photo/beautiful-sunset-view-at-mata-vaishnodevi-darbar-katra-jammu.jpg?s=612x612&w=0&k=20&c=-KG6Mr8xMAePfvnRg1N211yOt3AfLbpAJAVjFtcfbCs=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223786203/photo/beautiful-sunset-view-at-mata-vaishnodevi-darbar-katra-jammu.jpg?s=612x612&w=0&k=20&c=7GYUz1IYxuSfuAjQbF2Aq4qyBFPnKVsdJeFwwtxUusg=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223785265/photo/beautiful-sunset-view-at-mata-vaishnodevi-darbar-katra-jammu.jpg?s=612x612&w=0&k=20&c=WhQzEAoJMibpBIr2eeRIfs6VOGTNW9Ec1NAqkCNB820=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223658730/photo/roads-covered-by-snow-between-mountains-of-patnitop-and-nathatop-jammu.jpg?s=612x612&w=0&k=20&c=Sz6aLT2TpMXAjrZdTKu_dUdWfi3XTC2AImqwtALpK-M=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223658731/photo/roads-covered-by-snow-between-mountains-of-patnitop-and-nathatop-jammu.jpg?s=612x612&w=0&k=20&c=lzunrJ36gqnKNIuHyApQuP2OyzPpSDQHgHWUFhJoq0I=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223657291/photo/roads-covered-by-snow-between-mountains-of-patnitop-and-nathatop-jammu.jpg?s=612x612&w=0&k=20&c=LGM3JQS43s-GW_1zZLF6x8Mr6iTJ6SYwbRp4HlHyaAM=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223657018/photo/roads-covered-by-snow-between-mountains-of-patnitop-and-nathatop-jammu.jpg?s=612x612&w=0&k=20&c=QCCfKXwE155KlsBsVZ4ir9KuphQDXg6MMgfxckMpTvY=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1223654415/photo/roads-covered-by-snow-between-mountains-of-patnitop-and-nathatop-jammu.jpg?s=612x612&w=0&k=20&c=RjIvx8I2Wg0KBfo3QXmOWt1lfQXWyjdzoRff_Qd8pNY=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1417554626/photo/beautiful-landscape-view-of-shri-mata-vaishno-devi-katra-railway-station-in-india.jpg?s=612x612&w=0&k=20&c=Yrm1VpUb_IMoLv3LIn0s4f5MJGH2du1HbPPIO26CwHs=" alt="Amber Fort">
+        </div>
+
+
+    </div>
+
+</body>
+</html>

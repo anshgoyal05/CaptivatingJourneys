@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captivating Journeys</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            grid-auto-rows: 300px;
+        }
+
+        
+        .gallery-item {
+            position: relative;
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay span {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        
+        .gallery-item:nth-child(1) {
+            background-color: #ff9a9e;
+        }
+
+        .gallery-item:nth-child(2) {
+            background-color: #fad0c4;
+        }
+
+        .gallery-item:nth-child(3) {
+            background-color: #f4e1d2;
+        }
+
+        .gallery-item:nth-child(4) {
+            background-color: #c3f7f7;
+        }
+
+        .gallery-item:nth-child(5) {
+            background-color: #b0e0e6;
+        }
+
+        .gallery-item:nth-child(6) {
+            background-color: #ffecd2;
+        }
+
+        
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-container {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Dal Lake, Srinagar</h1>
+
+    <div class="gallery-container">
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/157181834/photo/selling-flowers.jpg?s=612x612&w=0&k=20&c=ufRFC7onMq7ICUBw4YUnwlz76Y5Y7Aq-bkgxoRPntrM=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1044781846/photo/dal-lake-in-srinagar-kashmir.jpg?s=612x612&w=0&k=20&c=OMfOMZpZBi4Tg-esjcXA4uOYjmKiXxqJbMr-mObhxtY=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2168510634/photo/floating-vegetable-market-drone-view.jpg?s=612x612&w=0&k=20&c=MjiFpRMu16rpwicWtewsO78xn2Ugz_glX0u5oQXflB8=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/992876454/photo/young-girl-in-traditional-kashmir-outfit.jpg?s=612x612&w=0&k=20&c=O_7sR5ysIbNlqGBTIPy3Y0l7p0INucsPVnb-9snX1eM=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1861570489/photo/colorful-shikara-boats.jpg?s=612x612&w=0&k=20&c=4-vJaqxrv4RBLK1i_yQBrIipOASyO7ABzJexQIA6Zpk=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1155225100/photo/boat-in-dal-lake.jpg?s=612x612&w=0&k=20&c=jcok_q6iitIAqDLPL9L57WvfUR-9vh5BPf18Fbi7yNQ=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1309289263/photo/old-boats-dal-lake-srinagar-kashmir-india.jpg?s=612x612&w=0&k=20&c=0QiNdejaxdvtp3fwPMuFvybxSI7RUJ8IvUf9BJP30J8=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1562100497/photo/the-fascinating-view-of-dal-lake-with-sunrise.jpg?s=612x612&w=0&k=20&c=ARZ60dGN-7g_e_C2m19oDhF21Zyn44VjLvh0l8mnN8Q=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/186437602/photo/indian-muslim-women-boating-in-dal-lake-kashmir.jpg?s=612x612&w=0&k=20&c=6khKOzwXuKtRcLXWehD-etl_cQfDzyP3Ik12-XE1zHk=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1861559093/photo/colorful-shikara-boats.jpg?s=612x612&w=0&k=20&c=PqK33KYiIT9KGAGE0SJm5pmOfm9XzcYt4uzu5xSgQ0k=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2186090919/photo/lily.jpg?s=612x612&w=0&k=20&c=d3Wb5-ARF6ProvYJM5I53qrzL8p5eJdLTLLA7qOY5T8=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/665365940/photo/shikara-boat-parking-at-dal-lake-in-srinagar.jpg?s=612x612&w=0&k=20&c=B05DGix8jmIdS2_XzxIDduo4T4BbCddWl1hIdlGh8Ds=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1436664992/photo/dal-lake-srinagar-kashmir-india.jpg?s=612x612&w=0&k=20&c=obJ1Oq9xwIG1EfYKLTf2IdC32ziQAhQAFLjjN-iOeNs=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1216575429/photo/srinagar-kashmir-dal-lake.jpg?s=612x612&w=0&k=20&c=Og_-6xyTJ7xK9-JKXUcD4nmW1lomXVEGNGMjYMw043Y=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1333873160/photo/dal-lake.jpg?s=612x612&w=0&k=20&c=WO3sKs3AQSx8v0sGGBJXBAV8-0KTtVCB_8RXPo8XC6U=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/520297390/photo/pink-white-lotus-in-dal-lake-srinagar-india.jpg?s=612x612&w=0&k=20&c=FbEbVEs4Bw7MYrXpA7XjjbnhrszrmXGX47PP6akCDUw=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2150924890/photo/kashmir-dal-lake-heaven-on-earth.jpg?s=612x612&w=0&k=20&c=1R6ZTdhhFcWFYjSmdEaRz9Ho_pdjIVoj50Xl93BXR2I=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1044985490/photo/silhouette-of-a-boat-riding-in-the-dal-lake-during-sunset.jpg?s=612x612&w=0&k=20&c=mwUMOpvW5JGMtdqtzMMTCeobhfjhvtN9gUNFnbNgCNc=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/978232702/photo/shikaras-in-nageen-lake-in-srinagar.jpg?s=612x612&w=0&k=20&c=IBSIiShe7yokYwOZJYCF5cE71AfFD1yUMtEpLMr7y5U=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/500032922/photo/shikara-florist.jpg?s=612x612&w=0&k=20&c=EmBfg66JvqLF6fas0VcMzkG_FnrPGvOiS6cAQKDxBxY=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/476646822/photo/dal-lake-at-srinagar-kashmir-india.jpg?s=612x612&w=0&k=20&c=x7BYv_m-BRW4SCFxr7nxZaScUWG4H00AQocN7ce7OlA=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/979176622/photo/house-boat-in-the-nageen-lake.jpg?s=612x612&w=0&k=20&c=f80M9gO36HWh9Wu09j7ZyipYG4PzZDP-HjBMgLOIoYM=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/513650391/photo/pink-white-lotus-in-dal-lake-srinagar-india.jpg?s=612x612&w=0&k=20&c=TWbVv9sLlxMqG0ujsMnhiqYTnXbd-FKLLOxruxDh0g0=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1572796048/photo/abandoned-shikara-boats-at-dal-lake.jpg?s=612x612&w=0&k=20&c=9y_Hj12EYweZAiLjKqBQF9unxg5V0XOkomwDkhQeRn4=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1417363999/photo/dal-lake-kashmir-india-house-boat-village.jpg?s=612x612&w=0&k=20&c=jGvcNtGONOvb_beZXEq4hStDd2CD6G8AM42o2FJAGA0=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1167356621/photo/scenic-view-of-dal-lake-jammu-kashmir-india.jpg?s=612x612&w=0&k=20&c=tFFmJ8WoSOdgXrStpYZkCbGvNIl6g2up1YurkZc_-Lo=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1288800166/photo/shikara.jpg?s=612x612&w=0&k=20&c=AOsji4L481x9hlg-3bzGcpMnlIurYIlFZIRpsQkcdLc=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/637185350/photo/waterplants-on-dal-lake-srinagar-kashmir-india.jpg?s=612x612&w=0&k=20&c=Rw5qwNZdIKOmCtd8fK9IXFqNxOhCaVmNH7AgaLi8DIE=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1069251792/photo/dal-lake-house-boat-morning-sun-rise-and-lake-reflection.jpg?s=612x612&w=0&k=20&c=Xss1FuQV610JBNJMM0Yx3XZfKH1rdvWDZA4o4ZXO7N8=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/970033946/photo/silhouette-of-a-fisherman-fishing-at-dawn-in-nageen-lake-srinagar-kashmir.jpg?s=612x612&w=0&k=20&c=Z-YkO557_7AWcMxQlXFrw2bKclrSPWrhOD5xOFpz2Ys=" alt="Amber Fort">
+        </div>
+
+
+    </div>
+
+</body>
+</html>

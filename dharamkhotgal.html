@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captivating Journeys</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            grid-auto-rows: 300px;
+        }
+
+        
+        .gallery-item {
+            position: relative;
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay span {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        
+        .gallery-item:nth-child(1) {
+            background-color: #ff9a9e;
+        }
+
+        .gallery-item:nth-child(2) {
+            background-color: #fad0c4;
+        }
+
+        .gallery-item:nth-child(3) {
+            background-color: #f4e1d2;
+        }
+
+        .gallery-item:nth-child(4) {
+            background-color: #c3f7f7;
+        }
+
+        .gallery-item:nth-child(5) {
+            background-color: #b0e0e6;
+        }
+
+        .gallery-item:nth-child(6) {
+            background-color: #ffecd2;
+        }
+
+        
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-container {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Dharamkot Village, Dharamshala</h1>
+
+    <div class="gallery-container">
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1188466322/photo/dharamsala-in-india.jpg?s=612x612&w=0&k=20&c=zroDXTErshVOvdYY0U0ThcrHw95SEZnPodYUhyMi8sI=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/465315178/photo/buddhist-prayer-flags-in-dharamshala-india.jpg?s=612x612&w=0&k=20&c=-2SvKgResHTRWGLfT7KvUy4aeEWLuk-wB0Yl8JZXqQU=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/466811668/photo/the-city-of-dharamsala-in-india.jpg?s=612x612&w=0&k=20&c=WuARFFt0zgZgwOTsUjeJb4Dv2L6OvUCygxlUbJ1obSI=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/536457347/photo/buddhist-temple.jpg?s=612x612&w=0&k=20&c=k1bHpjW0yPdBC1K6NN3oSc4zyVVZNW294EaRzbWa8jE=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1188464649/photo/dharamsala-in-india.jpg?s=612x612&w=0&k=20&c=Wkrdq3Qd4oE7eqqLxo3-R9cWpujHiMyOT16Jj1XO5sA=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/483347759/photo/mcleod-ganj-behind-buddhist-prayer-flags.jpg?s=612x612&w=0&k=20&c=rQvBXRY2Qpsm2SMG2y0Rasj0Qewn-CwbA5bzu4Olc6Y=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1304149934/photo/a-view-on-the-village-of-macleod-ganj-home-too-many-tibetans-in-exile.jpg?s=612x612&w=0&k=20&c=OktW1gTBnwQuT5EdKDRlXCMx55uCWMZ8uUd8uGRRTmY=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/105137790/photo/india-dharamsala.jpg?s=612x612&w=0&k=20&c=0fdwsqdOBn-HvtgNNu6HgucxgPiIPmxUc3FsjqOva_M=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1359967678/photo/kangra-fort-kangra-valley-himachal-pradesh.jpg?s=612x612&w=0&k=20&c=QmQUAwxDF_mhll1WuXsh2vJlePBPswkKsPaMQRMrLOQ=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1453998153/photo/mcleod-ganj-at-dramatic-sky-city-and-praying-flags-dharamshala-india.jpg?s=612x612&w=0&k=20&c=Acb65dOIel_LQRif8AVUx7c1l714AyWSMaf1kMQczDg=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/485766774/photo/dharamsala-india.jpg?s=612x612&w=0&k=20&c=W-s4DVi_tVn4trWu1xNirnwYRXC7LbYv9zERDKJNbao=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1302465675/photo/triund-top-dharamshala-himachal-pradesh.jpg?s=612x612&w=0&k=20&c=aNsOXQofkZGklD1n3OzAWk2ZrJtHvioL6YPD3IzugbU=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/159081358/photo/mcleodganj-dharamsala-himachal-pradesh-india.jpg?s=612x612&w=0&k=20&c=zWinDIq1kUtYbAMuMDfNbZW309C5KM4yGAk4mxAXKxw=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/466820996/photo/the-city-of-dharamsala-in-india.jpg?s=612x612&w=0&k=20&c=xLzn4s7jenaizTqBIs5nP8EHTC0PEulVsyKiu33-04A=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/483374967/photo/prayer-flags-arround-dalai-lama-temple-in-mcleod-ganj-dharamsala.jpg?s=612x612&w=0&k=20&c=rrQ2LxSmzl5pUeZrTmbmJGv5T_ConzqLkiHTuzLPFpM=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/998422152/photo/mcleodganj-himachal-pradesh-india.jpg?s=612x612&w=0&k=20&c=NDXeVwsPrqoEtRb_xKz6tUHvNsBFqLK38d6Mpd1KDYA=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/536048881/photo/dalai-lama-temple.jpg?s=612x612&w=0&k=20&c=xlFRGSjR78dzdSX8nJcczNa42V9wpyMoOhi10DCPVl8=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/465330992/photo/buddhist-prayer-flags-in-dharamshala-india.jpg?s=612x612&w=0&k=20&c=f8Py88jmNKnRXHy-hUxtZ56XoyaHJ0KyY47iio_j5YI=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/528148431/photo/dharamsala.jpg?s=612x612&w=0&k=20&c=-C-2M_SqbevEFkY3J-rLNbxi-IZrcUeVcwTSkp2OAaA=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/486378161/photo/tsuglagkhang.jpg?s=612x612&w=0&k=20&c=-pfFR0EDptMtuTeJQVCqrbJUQb4p4xnK7Ff20iy2N8o=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/466809040/photo/the-city-of-dharamsala-in-india.jpg?s=612x612&w=0&k=20&c=_nC7NBcHdsAehQIbjo4s4AiEYH7AP_0SgI_G502yDQM=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/486379137/photo/tsuglagkhang-compound.jpg?s=612x612&w=0&k=20&c=kk1hcfbdTQBsn1r6S6xwvKUYv6R9R1s0A1LFE2vMe8k=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/119377501/photo/buddhist-temple-in-dharamsala-india.jpg?s=612x612&w=0&k=20&c=Hhf1Q6cFl1UpOUALxPRzsAE0b8u5fiUEpFBoLuf742Y=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/536048881/photo/dalai-lama-temple.jpg?s=612x612&w=0&k=20&c=xlFRGSjR78dzdSX8nJcczNa42V9wpyMoOhi10DCPVl8=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1188461894/photo/dharamsala-in-india.jpg?s=612x612&w=0&k=20&c=tTGmSVMzWjmddbII6wlWYxkbZ6bzo2w0lRuFfzIerQs=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1491301271/photo/aerial-view-of-dharamshala-of-himachal-pradesh-surrounded-by-cedar-forests-and-dhauladhar.jpg?s=612x612&w=0&k=20&c=yLdG98ZThhQUmX2dDiaYQqbw1Xrt09Sn7_mgGjt0dkw=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/486378167/photo/tsuglagkhang-complex.jpg?s=612x612&w=0&k=20&c=Hz5VitQtiZBFEV_wBqXVYGkV9YWPRkumVsWEZgnRCKg=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/486378157/photo/tsuglagkhang-home-of-dalai-lama.jpg?s=612x612&w=0&k=20&c=IoUC_BulPfg6Zsf76xQRdX5Fo_2FQPXkLHTKMuFbEmw=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/821231984/photo/himalayan-landscape.jpg?s=612x612&w=0&k=20&c=9FT00vm6Wo3KtdvBHbRXtJ2dcfWxEl9lr4yriZu8q1U=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/469831228/photo/tibetan-monastery.jpg?s=612x612&w=0&k=20&c=Fbl8LLvZa6V2ME4XVwVLuOAdB8a2UXGXBqvWmp7adDQ=" alt="Amber Fort">
+        </div>
+
+
+    </div>
+
+</body>
+</html>

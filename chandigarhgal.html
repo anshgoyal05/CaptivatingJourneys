@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(135deg,#009245  0%, #FCEE21 100%)
+}
+
+/* Gallery container */
+.gallery-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color:#ABBA7C;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 5px;
+    color: #b7b1b1;
+    text-shadow: 2px 2px 4px white ;
+    font-size: 80px;
+}
+
+p {
+    margin-bottom: 30px;
+    color: #a49e9e;
+    text-shadow: 1px 1px 2px white ;
+    font-size: 60px;
+}
+
+/* Grid layout */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* Gallery item */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="https://plus.unsplash.com/premium_photo-1723532651359-979556174a8d?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1550948390-6eb7fa773072?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1562886695-0f3c22a48bbb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1601654253194-260e0b6984f9?q=80&w=1999&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1578302758063-0ef3e048ca89?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://plus.unsplash.com/premium_photo-1696531220266-362a418da9b4?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://plus.unsplash.com/premium_photo-1697795222986-81caccb63fba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1614236453636-44d66382db62?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://plus.unsplash.com/premium_photo-1663126971247-c78c1743484a?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1611223589819-ab83ee2ddaef?q=80&w=1922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://plus.unsplash.com/premium_photo-1675715923815-789c9895e541?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1439066290691-510066268af5?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/1486545903/photo/rock-garden-chandigarh-in-the-evening.webp?a=1&b=1&s=612x612&w=0&k=20&c=vPKNgt15jni0s59jdAlcvfwo-lvYpuRn0FBY3I_vFBY=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1591870252156-4b178595b51f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1497668319663-af2fa49df87e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://plus.unsplash.com/premium_photo-1691031428291-1db669413fa0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/471757663/photo/army-of-statuettes-in-chandigarh.webp?a=1&b=1&s=612x612&w=0&k=20&c=OwyydvpLpWeJ1oZ2Z7p1aMfU4KLbm-wtLAoWyMEnBDg=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1675589942646-7052111d668f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/1500547272/photo/close-up-image-of-boating-at-sunset-on-sukhna-lake-chandigarh-india-sun-reflection-on.webp?a=1&b=1&s=612x612&w=0&k=20&c=tvT1vSSvYivPfV6Sy7-T4xz87RXJA4Yv0o-ygK4h0nw=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/1054916766/photo/calm-water.webp?a=1&b=1&s=612x612&w=0&k=20&c=ZG-T7kP-xqfOBuUD9g1spm2Teu8v-hFQP7V7qRzxE1A=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/1203392697/photo/sukhna-lake-chandigarh-at-sunrise.jpg?s=612x612&w=0&k=20&c=rabpQw7KhWTbYm3W9dndtERzvAYAjqVhEM4eJBRGrRQ=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/480325640/photo/sukhna-lake-in-chandigarh-india.jpg?s=612x612&w=0&k=20&c=YEHLjVDGvhxgbmnUAU5a_KCcZY92XX4iLBjqD8U5oew=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/1403198797/photo/rock-garden-situated-at-chandigarh-india.jpg?s=612x612&w=0&k=20&c=rfTLaA-WgNe0sNnhLX02pEfyyN15CYrHFhSLjTGuYCI=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/1330901333/photo/nek-chands-rock-garden-of-chandigarh.jpg?s=612x612&w=0&k=20&c=dVFfZVM7Ax6Kgc79z06moVTxSpfju5omvsNypNCNxhg=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/1486545903/photo/rock-garden-chandigarh-in-the-evening.jpg?s=612x612&w=0&k=20&c=ObtsSMc6YFUUiHl0q_D9w9lCNeTeJMdO73G5CkuWZ1M=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/1128377272/photo/sukhna-lake.jpg?s=612x612&w=0&k=20&c=IfquVYqY8D5jLP1PvV_MxYHD5z5tNUMghUUy2kS07gk=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/1365969500/photo/roads-of-chandigarh-in-the-morning.jpg?s=612x612&w=0&k=20&c=7_i3A2l0QDNUmiJ4zWlZU8gZ862EY6L1mHJrlY36LSA=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/1403198802/photo/rock-garden-situated-at-chandigarh-india.jpg?s=612x612&w=0&k=20&c=_5jDCkj5SS6OTfJj80Sxc8GCtigNs7gdLxsSqMKOc2Y=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/600414672/photo/rock-garden-chandigarh.jpg?s=612x612&w=0&k=20&c=UWfZGQ8pxTrNFX7mIMJ9cEkbQh72WHWj_TziRlyMzvE=" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/539345530/photo/rock-garden.jpg?s=612x612&w=0&k=20&c=X6JbwVt7nfxTmvGVNYW4g9yYUO3OzPw3I8BG_A3t6J0=" alt="Gallery Image 1"></div>
+
+            </div>
+         </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f4ebebd9;
+    color: #000000;
+    height: 150px;
+}
+.img{
+    height:140px ;
+    width:30%;
+
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: ;
+    font-size: 70px;
+    align-self: center;
+    padding-left: 80px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 1.5rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color:#000000;
+    font-weight: 500;
+}
+
+.navbar ul li a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+
+
+
+
+
+/* Featured Section */
+.featured {
+    padding: 3rem 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.featured-grid {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.featured-item {
+    flex: 1;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.featured-item .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+}
+.aman{color: #f4f4f4;
+    /* background-color: #f4f4f4; */
+}
+.aman:hover{
+    color: #e67e22;
+}
+
+
+
+/* Blog Posts Section */
+.blog-posts {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.blog-posts h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.post-grid {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.post-item {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.post-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+/* .post-item img:hover{
+    width: 110%;
+
+} */
+
+.post-item h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.post-item p {
+    font-size: 1rem;
+    /* color: #666; */
+}
+
+.footer {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.875rem;
+}
+.varun{ background-color:  #f4ebebd9;}
+.varun h1{font-size: 80px;
+
+}
+.varun p{font-size: xx-large;}

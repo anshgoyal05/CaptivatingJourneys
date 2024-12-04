@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captivating Journeys</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .destination-block {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            background: #fff;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .destination-block:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination-header {
+            margin-bottom: 20px;
+        }
+
+        .destination-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .destination-description {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .sub-destination-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .sub-destination-block {
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            flex: 1;
+            background: #f9f9f9;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .sub-destination-block:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .sub-destination-image {
+            height: 100px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .sub-destination-content {
+            padding: 10px;
+        }
+
+        .sub-destination-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .sub-destination-description {
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Chandigarh -->
+        <div class="destination-block">
+            <div class="destination-header">
+                <div class="destination-title">Chandigarh</div>
+                <div class="destination-description">The beautiful city designed by Le Corbusier.</div>
+            </div>
+            <div class="sub-destination-container">
+                <a href="rockgal.html" class="sub-destination-block">
+                    <img src="https://media.istockphoto.com/id/1354839425/photo/rock-garden-chandigarh.jpg?s=612x612&w=0&k=20&c=UOTAuKzpslqFZ6T9XUt-QKYIsYxzIGzSbMT-k5dqFs4=" 
+                         alt="Rock Garden" class="sub-destination-image">
+                    <div class="sub-destination-content">
+                        <div class="sub-destination-title">Rock Garden</div>
+                        <div class="sub-destination-description">Famous sculpture garden built from recycled materials.</div>
+                    </div>
+                </a>
+                <a href="sukhnagal.html" class="sub-destination-block">
+                    <img src="https://media.istockphoto.com/id/1054916768/photo/sunrise-at-sukhna.jpg?s=612x612&w=0&k=20&c=242Hr7iCUfrx-I_8Riyh1aNj1zqk98ft1TX4OTEDibI=" 
+                         alt="Sukhna Lake" class="sub-destination-image">
+                    <div class="sub-destination-content">
+                        <div class="sub-destination-title">Sukhna Lake</div>
+                        <div class="sub-destination-description">A tranquil lake perfect for walks and boating.</div>
+                    </div>
+                </a>
+                <a href="capitolgal.html" class="sub-destination-block">
+                    <img src="https://images.unsplash.com/photo-1697308539761-312d0c9b884f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D" 
+                         alt="Rose Garden" class="sub-destination-image">
+                    <div class="sub-destination-content">
+                        <div class="sub-destination-title">Capitol Complex</div>
+                        <div class="sub-destination-description">Asia's largest rose garden with over 1600 varieties.</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Dharamshala -->
+        <div class="destination-block">
+            <div class="destination-header">
+                <div class="destination-title">Dharamshala</div>
+                <div class="destination-description">A serene hill station surrounded by the Dhauladhar mountains.</div>
+            </div>
+            <div class="sub-destination-container">
+                <a href="dharamkhotgal.html" class="sub-destination-block">
+                    <img src="https://media.istockphoto.com/id/1428757016/photo/upper-neelum-valley-azad-kashmir-pakistan.webp?a=1&b=1&s=612x612&w=0&k=20&c=Tob8F-wAWWkZVGc2sOxrmhoHolThZXVy0oVnM79Rk4Y=" 
+                         alt="McLeod Ganj" class="sub-destination-image">
+                    <div class="sub-destination-content">
+                        <div class="sub-destination-title">Dharamkot Village</div>
+                        <div class="sub-destination-description">Home to the Dalai Lama and Tibetan culture.</div>
+                    </div>
+                </a>
+                <a href="bhagsugal.html" class="sub-destination-block">
+                    <img src="https://media.istockphoto.com/id/537383233/photo/bhagsu-falls-dharamshala-india.jpg?s=612x612&w=0&k=20&c=c5WzTmmQ3uvhQM1Ac4htJRbBkLHdNm8BqhcHqIxOgpY=" 
+                         alt="Bhagsu Falls" class="sub-destination-image">
+                    <div class="sub-destination-content">
+                        <div class="sub-destination-title">Bhagsu Falls</div>
+                        <div class="sub-destination-description">A stunning waterfall and hiking destination.</div>
+                    </div>
+                </a>
+                <a href="triundgal.html" class="sub-destination-block">
+                    <img src="https://media.istockphoto.com/id/1478768052/photo/triund-trek.webp?a=1&b=1&s=612x612&w=0&k=20&c=QT4x-7_8Kdf3i38PaqQt0-b4YARPwRjf8NUIjxSHWq0=" 
+                         alt="Triund Trek" class="sub-destination-image">
+                    <div class="sub-destination-content">
+                        <div class="sub-destination-title">Triund Trek</div>
+                        <div class="sub-destination-description">A scenic trek with breathtaking views of the Himalayas.</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Rajasthan -->
+        <div class="destination-block">
+            <div class="destination-header">
+                <div class="destination-title">Rajasthan</div>
+                <div class="destination-description">The land of deserts, palaces, and rich heritage.</div>
+            </div>
+            <div class="sub-destination-container">
+                <a href="ambergal.html" class="sub-destination-block">
+                    <img src="https://media.istockphoto.com/id/469788052/photo/amer-fort-near-jaipur.webp?a=1&b=1&s=612x612&w=0&k=20&c=AqwNvMc6nA25m2y0omr-zNFqySj_t4FKrM3VryVUp1w=" 
+                         alt="Jaipur" class="sub-destination-image">
+                    <div class="sub-destination-content">
+                        <div class="sub-destination-title">Amber Fort, Jaipur</div>
+                        <div class="sub-destination-description">Explore the Pink City and its royal palaces.</div>
+                    </div>
+                </a>
+                <a href="camelgal.html" class="sub-destination-block">
+                    <img src="https://media.istockphoto.com/id/115859882/photo/cameldriver-and-camel-standing-on-dune-at-sunset-jaisalmer-rajasthan.jpg?s=612x612&w=0&k=20&c=kR586eg-ycWtJ_kMtmbNB42JLz7IuK8fjdkYuRBKeaQ=" 
+                         alt="Udaipur" class="sub-destination-image">
+                    <div class="sub-destination-content">
+                        <div class="sub-destination-title">Camel Safari, Jaisalmer</div>
+                        <div class="sub-destination-description">The City of Lakes with beautiful architecture.</div>
+                    </div>
+                </a>
+                <a href="lakepalacegal.html" class="sub-destination-block">
+                    <img src="https://media.istockphoto.com/id/487487153/photo/lake-palace-udaipur-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=44hov7irQcE5RAEoYsDc1mcXydcc1qx3KYUIMiiy-fs=" 
+                         alt="Jaisalmer" class="sub-destination-image">
+                    <div class="sub-destination-content">
+                        <div class="sub-destination-title">Lake Palace, Udaipur</div>
+                        <div class="sub-destination-description">The Golden City in the heart of the Thar Desert.</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Kashmir -->
+        <div class="destination-block">
+            <div class="destination-header">
+                <div class="destination-title">Kashmir</div>
+                <div class="destination-description">Known as paradise on Earth, filled with natural beauty.</div>
+            </div>
+            <div class="sub-destination-container">
+                <a href="dalgal.html" class="sub-destination-block">
+                    <img src="https://media.istockphoto.com/id/899087286/photo/waterplants-on-dal-lake-srinagar-kashmir-india.jpg?s=612x612&w=0&k=20&c=eg1bh74yfxt1qi8WdQtQ8VOGpeZjT4Jp4ozay3Rg2IQ=" 
+                         alt="Srinagar" class="sub-destination-image">
+                    <div class="sub-destination-content">
+                        <div class="sub-destination-title">Dal Lake, Srinagar</div>
+                        <div class="sub-destination-description">Experience houseboats and shikaras on Dal Lake.</div>
+                    </div>
+                </a>
+                <a href="gulmarggal.html" class="sub-destination-block">
+                    <img src="https://media.istockphoto.com/id/665366534/photo/gandola-cable-car-in-gulmarg.jpg?s=612x612&w=0&k=20&c=15HVHYGv3e0AVTLI5B1W1RzIVAOsiAXvqFgfsbVsJYg=" 
+                         alt="Gulmarg" class="sub-destination-image">
+                    <div class="sub-destination-content">
+                        <div class="sub-destination-title">Gulmarg</div>
+                        <div class="sub-destination-description">A winter wonderland for skiing and cable cars.</div>
+                    </div>
+                </a>
+                <a href="vaishnogal.html" class="sub-destination-block">
+                    <img src="https://images.unsplash.com/photo-1719377678428-d9bcec6976f3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmFpc2hubyUyMGRldmklMjB0ZW1wbGV8ZW58MHx8MHx8fDA%3D" 
+                         alt="Pahalgam" class="sub-destination-image">
+                    <div class="sub-destination-content">
+                        <div class="sub-destination-title">Vaishno Devi</div>
+                        <div class="sub-destination-description">Lush valleys and breathtaking landscapes.</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

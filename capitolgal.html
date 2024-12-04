@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captivating Journeys</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            grid-auto-rows: 300px;
+        }
+
+        
+        .gallery-item {
+            position: relative;
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay span {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        
+        .gallery-item:nth-child(1) {
+            background-color: #ff9a9e;
+        }
+
+        .gallery-item:nth-child(2) {
+            background-color: #fad0c4;
+        }
+
+        .gallery-item:nth-child(3) {
+            background-color: #f4e1d2;
+        }
+
+        .gallery-item:nth-child(4) {
+            background-color: #c3f7f7;
+        }
+
+        .gallery-item:nth-child(5) {
+            background-color: #b0e0e6;
+        }
+
+        .gallery-item:nth-child(6) {
+            background-color: #ffecd2;
+        }
+
+        
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-container {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Capitol Complex, Chandigarh</h1>
+
+    <div class="gallery-container">
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1330899571/photo/capitol-complex-in-chandigarh-india.jpg?s=612x612&w=0&k=20&c=VvEe1BsXYNs4umuyJ0qr2n4I6oUF1QhsoaMC6ev9S2o=" alt="Rock Graden">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1332460861/photo/fountain-mahal-clicked-at-pinjor-garden-chandigarh-punjab-india.jpg?s=612x612&w=0&k=20&c=ihE5DvgsgFD8d8C8OCitLeMoXeQY38GqjED5zE4y8iQ=" alt="Rock Graden">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1368991461/photo/sector-42-lake-in-chandigarh.jpg?s=612x612&w=0&k=20&c=0cgmdu-opzyLbOkMtMlmjN1nomfHtpYC427hq9PeSAM=" alt="Rock Graden">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1330899548/photo/capitol-complex-in-chandigarh-india.jpg?s=612x612&w=0&k=20&c=WGHEPBqoYjHRIae40SxRvN8XrhpEfUbFr05Oj1nYbqM=" alt="Rock Graden">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1276506796/photo/dehli-india.jpg?s=612x612&w=0&k=20&c=q-lhgc4f4Y-HJ0MBtTUPxBCLNWXBvswfjMQB_dtJzJI=" alt="Rock Graden">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1330901532/photo/japanese-garden-in-chandigarh-india.jpg?s=612x612&w=0&k=20&c=0P17CSPGrBphpFYJ-FnehAPUK0DW45cea_pI-6qeNfM=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://plus.unsplash.com/premium_photo-1691030924664-94108416699e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2FwaXRvbCUyMGNvbXBsZXglMjBjaGFuZGlnYXJoJTIwfGVufDB8fDB8fHww" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1647859681540-8496720a52e0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fGNoYW5kaWdhcmh8ZW58MHx8MHx8fDA%3D" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1330901549/photo/japanese-garden-in-chandigarh-india.jpg?s=612x612&w=0&k=20&c=7MwPYxmIxv5Ylk3ipETc39fbGzxUVQ-YuYbp-xQTK4E=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1330901540/photo/japanese-garden-in-chandigarh-india.jpg?s=612x612&w=0&k=20&c=Q-8mwa3NC4onRtuMJlllSeJAg--ZDakphUaAZdHXYE0=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1697308539764-74be3e4bb76b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njl8fGNoYW5kaWdhcmh8ZW58MHx8MHx8fDA%3D" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1697306323210-5972e68c622d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1697308539761-312d0c9b884f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1697308540082-935d3acb6d43?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIyfHx8ZW58MHx8fHx8" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1697308539769-100c311d54d8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1697308539771-d1c283da8338?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHx8" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1697308539762-f92f8795441f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI1fHx8ZW58MHx8fHx8" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1664272164227-9555cf731caf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3OHx8fGVufDB8fHx8fA%3D%3D" alt="Rock Graden">
+        </div>
+
+
+    </div>
+
+</body>
+</html>

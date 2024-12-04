@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captivating Journeys</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            grid-auto-rows: 300px;
+        }
+
+        
+        .gallery-item {
+            position: relative;
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay span {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        
+        .gallery-item:nth-child(1) {
+            background-color: #ff9a9e;
+        }
+
+        .gallery-item:nth-child(2) {
+            background-color: #fad0c4;
+        }
+
+        .gallery-item:nth-child(3) {
+            background-color: #f4e1d2;
+        }
+
+        .gallery-item:nth-child(4) {
+            background-color: #c3f7f7;
+        }
+
+        .gallery-item:nth-child(5) {
+            background-color: #b0e0e6;
+        }
+
+        .gallery-item:nth-child(6) {
+            background-color: #ffecd2;
+        }
+
+        
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-container {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sukhna Lake, Chandigarh</h1>
+
+    <div class="gallery-container">
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1500547272/photo/close-up-image-of-boating-at-sunset-on-sukhna-lake-chandigarh-india-sun-reflection-on.jpg?s=612x612&w=0&k=20&c=HrbMESewIGXzW9M58c44YPnS0FGCGj9AuW1UFqZm2PM=" alt="Rock Graden">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1054916766/photo/calm-water.jpg?s=612x612&w=0&k=20&c=sz1shtsZl5Bn90_E3qUJ_G3J8jxiRVa9cxWRauUiz1A=" alt="Rock Graden">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/459117087/photo/sun-rise-at-lake.jpg?s=612x612&w=0&k=20&c=_EwjTEE75cLy3NGB9yEXDEepIZeBN2ksfOJGWs1ZMZ4=" alt="Rock Graden">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1500546981/photo/image-of-boating-at-on-sukhna-lake-chandigarh-india-boats-canoes-pedalos-and-kayaks-on.jpg?s=612x612&w=0&k=20&c=2xCnKmkHm0iJMUVI4Yufn9ZQU5gK6ObB515VFg5ksGU=" alt="Rock Graden">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/480325640/photo/sukhna-lake-in-chandigarh-india.jpg?s=612x612&w=0&k=20&c=YEHLjVDGvhxgbmnUAU5a_KCcZY92XX4iLBjqD8U5oew=" alt="Rock Graden">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1203392697/photo/sukhna-lake-chandigarh-at-sunrise.jpg?s=612x612&w=0&k=20&c=rabpQw7KhWTbYm3W9dndtERzvAYAjqVhEM4eJBRGrRQ=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1459023312/photo/sunset-at-sukhna-lake-chandigarh.jpg?s=612x612&w=0&k=20&c=0L3Azgv2HoUT4V985PpTebj08GCLV1MZImhXZsLdTsQ=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1495023181/photo/sunset-at-sukhna-lake-chandigarh.jpg?s=612x612&w=0&k=20&c=My9ODvn6affS72KjU2_NYIaN3bjONheXYw-PlKrzv2M=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1225254439/photo/sukhna-lake-at-night-surrounded-by-blue-lights-and-a-tree.jpg?s=612x612&w=0&k=20&c=exkPAWM1sJgVw31CDGTKmqxHFzbej8o3ktuDE9Shspo=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/468872229/photo/siberian-ducks-in-sukhna-lake-chandigarh-india.jpg?s=612x612&w=0&k=20&c=Df0GmhSWz9hwDow6-Lep1yAY5M-xb3TW-0n4A4lCcyw=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1323984081/photo/sunset-at-sukhna-lake.jpg?s=612x612&w=0&k=20&c=T8hWHpkJoI9Gn_3w7AN-9yFPPIrGuFEddvF2N3afego=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1472745999/photo/common-pochard-aythya-ferina-slow-motion-shots-diving-in-sukhna-lake-and-splashing-about.jpg?s=612x612&w=0&k=20&c=pCJUBtq2e6JmRR3UBgoMUwCXxppdAviL0yzHADoArQI=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1167738264/photo/sukhna-lake-chandigarh-india.jpg?s=612x612&w=0&k=20&c=BvCnJCxQsfnmT80MPdUBUwaX0PrCWpee2I0yymn1ovw=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1459023333/photo/sunset-at-sukhna-lake-chandigarh.jpg?s=612x612&w=0&k=20&c=TeZu_7E-D4XVFk54hfnMtdQiY-rBHWnX0nkKRFXlN1c=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1459023308/photo/sunset-at-sukhna-lake-chandigarh.jpg?s=612x612&w=0&k=20&c=uFK1dZDYCcRrBIEM_5RsRmo8fvr2zjkEGgDIOZKiIbE=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1472745985/photo/old-damaged-windmill-wind-turbine-placed-at-sukhna-lake-chandigarh-showing-use-of-renewable.jpg?s=612x612&w=0&k=20&c=0-as3V4AOasatBORWqoU01D4nbncOsUnqjt9DMiIZzI=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1368991475/photo/sunset-at-sukhna-lake-chandigarh.jpg?s=612x612&w=0&k=20&c=R-bPct_aDDCeyVWWN8ywc82pKLmaEArB_a1pRZhcJKA=" alt="Rock Graden">
+        </div>
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1459023354/photo/sunset-at-sukhna-lake-chandigarh.jpg?s=612x612&w=0&k=20&c=jKOW4kPpb2xXYm-f8PHVjPpjqKm10Q2EtiADg45fIj4=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1459023367/photo/sunset-at-sukhna-lake-chandigarh.jpg?s=612x612&w=0&k=20&c=nj7PAi0tsLk8oFAOiJh4Y4Dl5t84hnBRzaDSUhsPPOw=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1368991488/photo/sunset-at-sukhna-lake-chandigarh.jpg?s=612x612&w=0&k=20&c=yjAig7RCrTZad6qfK48VJQLNcXs-MCbBd3tbQeAQc3k=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2135137515/photo/scene-of-sukhna-lake-chandigarh-india-asia-urban-beautiful-lake-in-city-beautiful-chandigarh.jpg?s=612x612&w=0&k=20&c=ngAxSpA0SXDQ7YyxTkJ3T29MUsYzd-s6iSH4rNupj9c=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2135139109/photo/scene-of-sukhna-lake-chandigarh-india-asia-urban-beautiful-lake-in-city-beautiful-chandigarh.jpg?s=612x612&w=0&k=20&c=fLGb2oPIBcsclSnlK1XvsJTC7A6euz08TE-l6DTsinE=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1477526448/photo/close-up-image-of-indian-wild-stray-dog-lying-on-concrete-promenade-cemented-wall-o-bouders.webp?a=1&b=1&s=612x612&w=0&k=20&c=2dMblN8pScqAug32WnsYOF73qUT3eNISo0xY_KsND1k=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2167143146/photo/close-up-image-of-indian-wild-stray-dog-lying-on-cemented-wall-of-boulders-concrete-promenade.jpg?s=612x612&w=0&k=20&c=AXFdq94ytSXmWgcTijw-DAaK-t0n5hu2c_HWfupYX9o=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1352911295/photo/common-pochard.jpg?s=612x612&w=0&k=20&c=DxSSHGL3MsgvR3i8GXBTi30CrbRS6j7SuBNqVSqKWp0=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/503681796/photo/ruddy-shelducks-in-glight.jpg?s=612x612&w=0&k=20&c=V19QV27hncF5UWmA0rISJv0MpvU5UyFNTiyB_LzlTf0=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1368991456/photo/sunset-at-sukhna-lake-chandigarh.jpg?s=612x612&w=0&k=20&c=1rxIQoIJDdckeNfaGtZsIRm0t1ONhUqZ-U8D8z5wq3s=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1182342214/photo/dramatic-beautiful-sky-with-clouds-and-blue-patches-in-between-over-a-hilly-green-terrain.jpg?s=612x612&w=0&k=20&c=Gon0pEnB2G5NqV5i3fUt0V3O9ZNk1TPmUZUTbLhrX8Y=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1459025651/photo/sunset-at-sukhna-lake-chandigarh.jpg?s=612x612&w=0&k=20&c=cwNm-hqBT74wIQ9PhUVKEPPTS1Fa8fhcBiDPiSgZwHg=" alt="Rock Graden">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1368197992/photo/sukhna-lake-photo.jpg?s=612x612&w=0&k=20&c=j_81ccWD0rpOCY6wektVXnu1Njg0NI0L9UZCNS8zxP0=" alt="Rock Graden">
+        </div>
+
+
+    </div>
+
+</body>
+</html>

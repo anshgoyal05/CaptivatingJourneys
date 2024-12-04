@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(135deg,#2E3192 0%, #1BFFFF 100%);
+}
+
+/* Gallery container */
+.gallery-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-COLOR:#8EA3A6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 5px;
+    color: #b7b1b1;
+    text-shadow: 2px 2px 4px white ;
+    font-size: 80px;
+}
+
+p {
+    margin-bottom: 30px;
+    color: #a49e9e;
+    text-shadow: 1px 1px 2px white ;
+    font-size: 60px;
+}
+
+/* Grid layout */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* Gallery item */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1507475834979-531ebe544dbb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1693388714513-44af92987b50?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1626621338418-713655538d99?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 2"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1711838813548-00140b0aff53?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHRyaXVuZCUyMGhpbGx8ZW58MHx8MHx8fDA%3D" alt="Gallery Image 3"></div>
+            <!-- <div class="gallery-item"><video src="D:\Downloads\mo2.mp4" alt="Gallery Image 6"></div> -->
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1580611888617-7e843d03d8aa?q=80&w=2038&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 4"></div>
+            
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1580611888617-7e843d03d8aa?q=80&w=2038&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 5"></div>
+            <!-- <div class="gallery-item"><video cantrol><source src="D:\Downloads\mo.mp4" type="video/mp4" ></video></div> -->
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1602918698995-aa8cea1a7e8a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/486114183/photo/bhagsunag-falls-dharamshala.jpg?s=612x612&w=0&k=20&c=PYDypMsfWYEOYlIQ3nY6GiHS6lZH7RmQo7ZfGJpBRak=" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1558005137-d9619a5c539f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/1318601691/photo/triund.jpg?s=612x612&w=0&k=20&c=DVE-H9GyEjBf42EySegjpdXNHQH2Z8O-aIEc6oiJZ2s=" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1731000891275-7b0b79f21c23?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://plus.unsplash.com/premium_photo-1729068649616-48b0254eed5d?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1730292423302-6dd52ef35661?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1638349168333-340bccd72761?q=80&w=1910&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1549535404-bab136ae490f?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://plus.unsplash.com/premium_photo-1697730331645-5ca8244b708a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/1298353508/photo/bhagsunaag-waterfall-in-dharamshala-during-summer.jpg?s=612x612&w=0&k=20&c=ihAB5oR8cNpvg0V7yW5N4umZApyOPlzMY6euUi1Yguc=" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1732045133230-1a670eef8620?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/486114193/photo/bhagsunag-falls-bhagsu-naag-village.jpg?s=612x612&w=0&k=20&c=cOOfZQl10_EntR0M6mM1GCAuZp47zVYVPiSfHWVTqbU=" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1638176818276-a4e90c753da6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/168522181/photo/namgyaima-stupa-temple-mcleodganj-dharamsala-himachal-pradesh-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=cjoCvgFTzS4t2fjahhxWpMXy5hHMm4ZfTDIYu1d79SM=" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1622225074638-1d80c0388697?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGRoYXJhbXNoYWxhfGVufDB8fDB8fHww" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1529583618181-bff9d372a986?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fGRoYXJhbXNoYWxhfGVufDB8fDB8fHww" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1613445570738-310b15eb0a1c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTl8fGRoYXJhbXNoYWxhfGVufDB8fDB8fHww" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1637081328570-69dc3d2587bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAyfHxkaGFyYW1zaGFsYXxlbnwwfHwwfHx8MA%3D%3D" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1677216753186-9921f7555600?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEzfHxkaGFyYW1zaGFsYXxlbnwwfHwwfHx8MA%3D%3D" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1701523968067-fd03c5a26c3f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU3fHxkaGFyYW1zaGFsYXxlbnwwfHwwfHx8MA%3D%3D" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1613445532992-d1c824d2e0d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQzfHxkaGFyYW1zaGFsYXxlbnwwfHwwfHx8MA%3D%3D" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1711838813571-5a5cf486b8ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE5fHxkaGFyYW1zaGFsYXxlbnwwfHwwfHx8MA%3D%3D" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1625401248962-96ea7573d836?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE2fHxkaGFyYW1zaGFsYXxlbnwwfHwwfHx8MA%3D%3D" alt="Gallery Image 6"></div>
+
+           
+            
+
+        </div>
+        
+    </div>
+</body>
+</html>

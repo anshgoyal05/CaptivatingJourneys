@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captivating Journeys</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            grid-auto-rows: 300px;
+        }
+
+        
+        .gallery-item {
+            position: relative;
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay span {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        
+        .gallery-item:nth-child(1) {
+            background-color: #ff9a9e;
+        }
+
+        .gallery-item:nth-child(2) {
+            background-color: #fad0c4;
+        }
+
+        .gallery-item:nth-child(3) {
+            background-color: #f4e1d2;
+        }
+
+        .gallery-item:nth-child(4) {
+            background-color: #c3f7f7;
+        }
+
+        .gallery-item:nth-child(5) {
+            background-color: #b0e0e6;
+        }
+
+        .gallery-item:nth-child(6) {
+            background-color: #ffecd2;
+        }
+
+        
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-container {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Triund, Dharamshala</h1>
+
+    <div class="gallery-container">
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1007403158/photo/beautiful-view-of-mountains-snow-line-mcleod-ganj-dharamsala-india.jpg?s=612x612&w=0&k=20&c=7MgaEtmBG1vcCX3-V8QhEDFmeN8FZHLRaR3aBiacb0k=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/466812150/photo/the-landscape-near-dharamsala-in-india.jpg?s=612x612&w=0&k=20&c=uvYXZjbf5QcSx1QIlqIplL7RxxpXPXmUK1spKV_G7Gs=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1188462594/photo/dharamsala-in-india.jpg?s=612x612&w=0&k=20&c=1xZ4q2ubFYsFFMAX_5eu7auhJQkikCY8c6QLpA_iVQc=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/956970152/photo/sunset-at-triund-hill-top-at-mcleodganj-dharamsala-himachal-pradesh-india.jpg?s=612x612&w=0&k=20&c=sInuX5aZfwnzKebet9FQH-tRWetJEoRZFsJaMVC32PM=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1007403086/photo/a-group-of-dome-tents-placed-on-a-grass-field-near-mcleodganj-snow-line-himachal-pradesh-india.jpg?s=612x612&w=0&k=20&c=v2AqHRqiK00TL6kG-l7BKqtPJD6e9Kffyf56K8EjR28=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1302465637/photo/triund-top-dharamshala-himachal-pradesh.jpg?s=612x612&w=0&k=20&c=N2u9IUFtyTXVccAQbUsilwihWtBxGIhNAe8J4XeUv10=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1302465593/photo/triund-top-dharamshala-himachal-pradesh.jpg?s=612x612&w=0&k=20&c=iFoyrxdwh2KUIAFNVOHWy93k55OzSZRujbcd-cfy0iU=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/843164808/photo/first-rays-of-sun-falling-on-a-snow-mountain-called-triund-in-mcleodganj-dharamshala-himachal.jpg?s=612x612&w=0&k=20&c=drgT-ditxu9BVpG2rE3Dxj2BpcdOVSHXT_Km8SUae6g=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1354250303/photo/beautiful-view-of-the-hills-during-sunset.jpg?s=612x612&w=0&k=20&c=3NxH7BmnrcgVKdOD_BimWn3nF5p8tPfzLWlljWPxGpI=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/955848174/photo/a-single-blue-tent-seen-against-dhaulahaar-peaks-of-himalayas-in-triund-sunny-day-whit-some.jpg?s=612x612&w=0&k=20&c=UMvJlrksXycVwhbOrhNr1QTA9fFPVYnftPwYBhF_Kgw=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/843169680/photo/clouds-moving-in-fast-during-a-beautiful-sunset-at-mcleodganj-dharamsala-himachal-pradesh.jpg?s=612x612&w=0&k=20&c=2xIkxEbJjZMZIfzGcbuRYpp2SxwNvK_MyXyygeJP-d0=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/667300612/photo/when-nature-decides-to-play-the-game-of-tones-dharamsala-mcleodganj-as-seen-from-triund-hill.jpg?s=612x612&w=0&k=20&c=lqdZWCrg93yP1Yk5ZmTo8CxmbMS8nhwzpAHL7SXiiYg=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1222814784/photo/a-dog-at-triund-dharamsala-india.jpg?s=612x612&w=0&k=20&c=Zdiz9WtiQlvDdZyyjlCqEUuYhsijEK54TGpdn9myl3k=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/955848086/photo/amazing-sunset-behind-a-mountain-with-the-silhouette-of-trees-dharamsala-india.jpg?s=612x612&w=0&k=20&c=8btXxgfPqIZ9Jtw-gt5JUlJv5-0dqdye9m8pS69AyKY=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/821231144/photo/himalayan-landscape.jpg?s=612x612&w=0&k=20&c=Mo_n1VfCL3_8I0tJp3xaCoEnyPSxHzWPZWlIbo4-uHg=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1398958438/photo/camping-in-triund-hill-top-at-mckleodganj-dharamshala-one-of-the-beautiful-trek-of-dharamshala.jpg?s=612x612&w=0&k=20&c=3XI-SREtQ9vQfO2D9eR2afwCJ_50qcsch7daBTUzMWo=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1007403146/photo/beautiful-view-of-mountains-snow-line-mcleod-ganj-dharamsala-india.jpg?s=612x612&w=0&k=20&c=NAm-g7ZyphKxa3N8k0AI9Iy-84ixpmS6zjkgFqMFeE8=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1150371351/photo/stunning-view-of-some-peaks-of-the-himalayas-mountains-in-triund-sunny-beautiful-day-with.jpg?s=612x612&w=0&k=20&c=yakAmfwJSFCzzz_21yYg2Tr7_DYWD8VW4H6jMJB6PI0=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1007403116/photo/amazing-night-view-of-mountains-in-snow-at-hill-top-snow-line-mcleod-ganj-dharamsala-india.jpg?s=612x612&w=0&k=20&c=_PFktCMfW0ltAKT5XVzw2GISHYhjcgsh8GWSaTwKOhk=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1222814575/photo/landscape-of-triund-dharamsala-in-india.jpg?s=612x612&w=0&k=20&c=mXC1fW4hLmnB2lOiHaumB32f4DPNZ-pyIDzNsZ16PRI=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1208734951/photo/dhauladhar-range-triund-himachal-pradesh.jpg?s=612x612&w=0&k=20&c=faH3baSTk2WlrSdp7po2BHXM9B5szjINWRvuByrWQn0=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1354250359/photo/green-tea-garden-and-long-trees-on-mountains.jpg?s=612x612&w=0&k=20&c=F699uruwqRAtXWeGGNuildk3sfvTAkV8NrWLBlZQLRo=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/667296936/photo/beautiful-sunrise-at-triund-hill-top-at-mcleodganj-dharamsala-himachal-pradesh-india-one-of.jpg?s=612x612&w=0&k=20&c=zrqXt3eFZqdcQUmLzXl8kIXJvuxNPOlk2RkouvKKEAo=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/667300604/photo/snow-being-illuminated-in-a-surreal-way-by-the-golden-sun-when-you-are-at-par-with-the-horizon.jpg?s=612x612&w=0&k=20&c=JW2DbA8gVgtDAL9zESJDvNcVyCN3PgORUECZmc1uUOU=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1302465675/photo/triund-top-dharamshala-himachal-pradesh.jpg?s=612x612&w=0&k=20&c=aNsOXQofkZGklD1n3OzAWk2ZrJtHvioL6YPD3IzugbU=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/955848162/photo/a-distant-view-of-dhauladhar-mountain-ranges-during-a-sunny-day-triund-dharamshala-himachal.jpg?s=612x612&w=0&k=20&c=QMTsRNR4IzDMgG13Mj6WVAtXfmJqd1xNszP7K-fMI0w=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1302465588/photo/triund-top-dharamshala-himachal-pradesh.jpg?s=612x612&w=0&k=20&c=3RLVFE_gP514TAvO_2ndy_DUQghpiNu7MVsm6TqUPvk=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1302465305/photo/triund-top-dharamshala-himachal-pradesh.jpg?s=612x612&w=0&k=20&c=mPQeNrWnUA6jF_rdxynKRkAqkKOYpHldBh7WoCUQzvA=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1302465619/photo/triund-top-dharamshala-himachal-pradesh.jpg?s=612x612&w=0&k=20&c=gmgAdq6VKBrnpu23msLja3JujuYV-TChOvwq_LycKXw=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1222814774/photo/a-dog-at-triund-dharamsala-india.jpg?s=612x612&w=0&k=20&c=r7kjQ9D24hPj0JO5ejX5Sn_ICKm3zqBm7x4Jh9h8-jY=" alt="Amber Fort">
+        </div>
+
+
+    </div>
+
+</body>
+</html>

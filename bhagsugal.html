@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captivating Journeys</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            grid-auto-rows: 300px;
+        }
+
+        
+        .gallery-item {
+            position: relative;
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay span {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        
+        .gallery-item:nth-child(1) {
+            background-color: #ff9a9e;
+        }
+
+        .gallery-item:nth-child(2) {
+            background-color: #fad0c4;
+        }
+
+        .gallery-item:nth-child(3) {
+            background-color: #f4e1d2;
+        }
+
+        .gallery-item:nth-child(4) {
+            background-color: #c3f7f7;
+        }
+
+        .gallery-item:nth-child(5) {
+            background-color: #b0e0e6;
+        }
+
+        .gallery-item:nth-child(6) {
+            background-color: #ffecd2;
+        }
+
+        
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-container {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bhagsu Waterfall, Dharamshala</h1>
+
+    <div class="gallery-container">
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1302465562/photo/triund-top-dharamshala-himachal-pradesh.jpg?s=612x612&w=0&k=20&c=NXFsm24sUkwXA7ZdDnAJ0EUB5nKynUakeH9IuDc_lys=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/537383233/photo/bhagsu-falls-dharamshala-india.jpg?s=612x612&w=0&k=20&c=c5WzTmmQ3uvhQM1Ac4htJRbBkLHdNm8BqhcHqIxOgpY=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/486114191/photo/inside-a-shelter-at-bhagsunag-falls-india.jpg?s=612x612&w=0&k=20&c=pcDtVItEjfHtsX-K0HVPd5s3jHgYU68afQheyKZL1-0=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1298353432/photo/bhagsunaag-waterfall-in-dharamshala-during-summer.jpg?s=612x612&w=0&k=20&c=3G6DcwacqHtDYnYYm4Kvw1l0oIj-dKah1yGkMtDDBOI=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/537452473/photo/our-bhagsu-falls-cafe.jpg?s=612x612&w=0&k=20&c=dZBdM0kCLhGmp0DcbTFgcu4wBO2oBWxGY323px5-S8U=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1201281737/photo/incredible-nature-at-the-beginning-of-the-himalayas-mountains-and-falls-bhagsunag-dharamsala.jpg?s=612x612&w=0&k=20&c=6VbolmrTN2HL2UchSZnbOBU_l9Xzv8ZkpIn8HuV67Y0=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1256167013/photo/a-series-of-stairs-leading-to-the-bhagsu-falls-in-mcleodganj-in-himachal-india.jpg?s=612x612&w=0&k=20&c=ISGPJ3TQUohPfeO4BwsgRMFoXf22JW5At5eZuqf0QJQ=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/486114195/photo/bhagsunag-spring.jpg?s=612x612&w=0&k=20&c=jh5vmmaGwFZoUzK5yMC-ib6XTuA9QH1GXQjKbpwxcuM=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/173674713/photo/cascade-falls-over-mossy-rocks.jpg?s=612x612&w=0&k=20&c=tsTM1y9hRfC_mFvIviMJK7lnxWOHeM20R2tCw9G2ZHk=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1713111476/photo/bhagsu-waterfall-mcleodganj-himachal-pradesh.jpg?s=612x612&w=0&k=20&c=OMQrCejjHpqlBcuTIeuIsfZ0C6AtgAmogeIxNa1jDMI=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1192250269/photo/time-lapse-of-water-falling-from-hill-top.jpg?s=612x612&w=0&k=20&c=8f58mhFwrLRoKFr7_zx_8P97P0rOO9SLKbGYAsRpPJw=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1201284132/photo/a-human-head-carved-in-one-of-the-stones-of-a-mountain-river-in-the-wild-dharamsala-india.jpg?s=612x612&w=0&k=20&c=qzGv_uC_vcceuz5wj8Zy3gHBvSZ9iwrcGUODKjK4ngU=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/486114193/photo/bhagsunag-falls-bhagsu-naag-village.jpg?s=612x612&w=0&k=20&c=cOOfZQl10_EntR0M6mM1GCAuZp47zVYVPiSfHWVTqbU=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/537372763/photo/bhagsu-falls-whitewater.jpg?s=612x612&w=0&k=20&c=yUrjL8U2Bwg3k_gsnZY49x2xqOSicCJyTGJl-jfD1Cc=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/186837826/photo/waterfalls-near-dharamsala-india.jpg?s=612x612&w=0&k=20&c=iRkbSXjLBBFyYyaF1xckL_KfkUXX8gjMuJMBGnAPYFA=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/486114183/photo/bhagsunag-falls-dharamshala.jpg?s=612x612&w=0&k=20&c=PYDypMsfWYEOYlIQ3nY6GiHS6lZH7RmQo7ZfGJpBRak=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/486114179/photo/bhagsunag-falls.jpg?s=612x612&w=0&k=20&c=DGLl6-yzo3nHzjimh1LbcaoM9XEL-KiQdpCc9N2Ng0M=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/466811074/photo/mountain-stream-near-dharamsala-in-india.jpg?s=612x612&w=0&k=20&c=i-7xz2XE8_9gwxJQao4S-aIiszRlFj-XeGDaIs-fTSY=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1187885997/photo/bhagsunag-waterfalls-dharamsala-himachal-pradesh-indiabhagsunag-waterfalls-dharamsala.jpg?s=612x612&w=0&k=20&c=DKlvSRzWbYYui9BNnn5HYePYxBPdjZwmOdg-Z2y7iJw=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/466811066/photo/mountain-stream-near-dharamsala-in-india.jpg?s=612x612&w=0&k=20&c=gSo3cN6OsvvnZ-zNZ6ofnMYi2b_Q3b4VQKbsvLMhoes=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1201283093/photo/incredible-nature-at-the-beginning-of-the-himalayas-mountains-and-falls-bhagsunag-dharamsala.jpg?s=612x612&w=0&k=20&c=caOnGk57Z0vh0zmNYnwEJaFsCll4-055bvHHSsE42Lw=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1201281417/photo/a-human-head-carved-in-one-of-the-stones-of-a-mountain-river-in-the-wild-dharamsala-india.jpg?s=612x612&w=0&k=20&c=UVy__ukV41rlwnXgIkTw77BjKA6R4QxrNu8JrZYn-_o=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1188465422/photo/dharamsala-in-india.jpg?s=612x612&w=0&k=20&c=XD3oGtO-32FPLyCjaXvyCquu7A8-9PqiRR8vE2u5rwE=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/500392072/photo/mun-peak-near-mc-leod-ganj-himachal-pradesh-india.jpg?s=612x612&w=0&k=20&c=2XjRt9RZrASQUd4TBA8cktmTN4Lff6qxhcCuzaNM44A=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/466811960/photo/the-landscape-near-dharamsala-in-india.jpg?s=612x612&w=0&k=20&c=f2YEf9-J1mgiigPCGlR_ckNuIP3PPkZATAtD0auirPg=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1201280102/photo/incredible-nature-at-the-beginning-of-the-himalayas-mountains-and-falls-bhagsunag-dharamsala.jpg?s=612x612&w=0&k=20&c=n9_B36rB3aaUgzZrM7bsm3VC3Wzx3yqorUXxhJvOQvU=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/465998774/photo/the-landscape-near-dharamsala-in-india.jpg?s=612x612&w=0&k=20&c=3Jx3-0Uj27962OgaYBtybJfjgLaGcx-rfWWbLCCg-Lg=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1201281914/photo/incredible-nature-at-the-beginning-of-the-himalayas-mountains-and-falls-bhagsunag-dharamsala.jpg?s=612x612&w=0&k=20&c=tNBjVszHbDw3wrG99fm8i4kAzRuGhvW2BbRIpccSv1A=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/465999762/photo/the-landscape-near-dharamsala-in-india.jpg?s=612x612&w=0&k=20&c=EUilcA0QuE-5GmCo-w_50b6PUokcf4qupjg-12CpY-g=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1201281989/photo/incredible-nature-at-the-beginning-of-the-himalayas-mountains-and-falls-bhagsunag-dharamsala.jpg?s=612x612&w=0&k=20&c=T_w48BURp0kGXT4qxfr4x2fLmL63u9zIdaiRfQHvCgQ=" alt="Amber Fort">
+        </div>
+
+
+    </div>
+
+</body>
+</html>

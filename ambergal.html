@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captivating Journeys</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            grid-auto-rows: 300px;
+        }
+
+        
+        .gallery-item {
+            position: relative;
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay span {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        
+        .gallery-item:nth-child(1) {
+            background-color: #ff9a9e;
+        }
+
+        .gallery-item:nth-child(2) {
+            background-color: #fad0c4;
+        }
+
+        .gallery-item:nth-child(3) {
+            background-color: #f4e1d2;
+        }
+
+        .gallery-item:nth-child(4) {
+            background-color: #c3f7f7;
+        }
+
+        .gallery-item:nth-child(5) {
+            background-color: #b0e0e6;
+        }
+
+        .gallery-item:nth-child(6) {
+            background-color: #ffecd2;
+        }
+
+        
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-container {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Amber Fort, Jaipur</h1>
+
+    <div class="gallery-container">
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/155909088/photo/early-morning-image-of-the-amber-fort-in-jaipur.jpg?s=612x612&w=0&k=20&c=vPclN7Zqa7kVb6zQO68lL4D7z1OEPXRpC-obuL_Ab9I=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1421235242/photo/amber-or-amer-fort.jpg?s=612x612&w=0&k=20&c=Couj3ijSwpzB8q-VPkAg2WrSMybvaXQXjRlJlL5goGc=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1084972120/photo/amer-fort-at-sunset-in-jaipur-india.jpg?s=612x612&w=0&k=20&c=fj2ZNorkDkcnvyMfMKk6ZT4-Xmrnk648B6LUajpulII=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2046352133/photo/historic-sattais-katcheri-hall-in-amber-fort-near-jaipur-rajasthan-india.jpg?s=612x612&w=0&k=20&c=GQp9QcedMgCwh3IZA3tTUdqxooIOPtz0CmzGczfZ-UU=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/520843258/photo/amer-aka-amber-fort-rajasthan-india.jpg?s=612x612&w=0&k=20&c=lNyqUqVqv9oyAJ2UeegJzEdVHvDS4dBfqJ5-NAInUmE=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/469788052/photo/amer-fort-near-jaipur.jpg?s=612x612&w=0&k=20&c=Rsd9v_Ix39ce8U9QKo3UnWfEMG1DUq4hnzh3APPi3g8=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/483618107/photo/amber-fort-jaipur-india.jpg?s=612x612&w=0&k=20&c=MOPo-aLk1CLq1-38tc85lFGVQC0gV3LsfJvP4QjKgYM=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/493915306/photo/amer-aka-amber-fort-rajasthan-india.jpg?s=612x612&w=0&k=20&c=tjHK8Qbd1mvlqP9zYFRiFkQhpsW5OJOBck6jpDXR2xE=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1016237188/photo/indian-man-riding-on-elephant-near-amber-fort-jaipur-india.jpg?s=612x612&w=0&k=20&c=1i7exj4Rcg1ybmPybYXZaZgUnuxOzuhJVLrEE503Zqk=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/476208946/photo/inside-amer-fort-jaipur-india.jpg?s=612x612&w=0&k=20&c=kpxJJouIYo06dDF0p0mqBAJd5rXhwJNeioQ7mEoMKAI=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2099185596/photo/woman-walking-on-surrounding-wall-in-amber-jaipur.jpg?s=612x612&w=0&k=20&c=l-3mWzey5LsvJyxGaxfibsgbxe-uKCf78E-sKzg00mc=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1286185150/photo/beautiful-architecture-historic-stepwell-of-panna-meena-ka-kund-near-the-amber-fort.jpg?s=612x612&w=0&k=20&c=-XQ0LZtv_d88ufUXIor06djWf91vU8tWMQbOF0RqmA4=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/186582004/photo/sun-sets-behind-palace-jaipur.jpg?s=612x612&w=0&k=20&c=OV-_tcJdWbL1UCE3tYcG-8eXp2N5ijTl53fi1tS3ewI=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1332650454/photo/amber-fort-of-jaipur-famous-tourist-attraction-rajasthan-india.jpg?s=612x612&w=0&k=20&c=fByjhwza3VizCFcyP1z25OlxKQwaglgB2XDMm213QKg=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/595152678/photo/two-indian-women-on-the-way-to-amber-fort-india.jpg?s=612x612&w=0&k=20&c=rw9XRLhAIwmwexTZAvlc9KzMDqgvKlMkh_5K8zVRE5Y=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1254978459/photo/amber-fort-jaipur.jpg?s=612x612&w=0&k=20&c=9Ue-5Yi0hIW4zZwRC2bqiXPLngK3EjDSwQWDlGgkq_I=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1410438637/photo/the-gateway-in-to-the-amber-fort-in-jaipur-india.jpg?s=612x612&w=0&k=20&c=muoq5AnZqqggan-DOVFln6jDQx7rEvy7Z_vLBjZBZ28=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/163851503/photo/indian-palace.jpg?s=612x612&w=0&k=20&c=kLK2qtCq1US_Uc5q_zSq3l5CuBCbW6OB8TkC7LAKqHg=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2150015755/photo/elephant-riders-in-amber-fort-famous-tourist-attraction-of-jaipur-india.jpg?s=612x612&w=0&k=20&c=hX1KimgLzTC0wDME-Y_YQoj-BujI7fR2SlMOkfWJiMs=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/520295746/photo/amer-palace-at-sunset-in-amer-india.jpg?s=612x612&w=0&k=20&c=e8jH8vHh5J5qcEJaJ71SEtLXIK7VfwPjXKqwOSmqtYY=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1330194978/photo/the-ornate-carvings-on-the-arches-of-the-ancient-amer-fort.jpg?s=612x612&w=0&k=20&c=e9wFD9h7jQBSo25nqfhGnOmMAdHcOJRPVevM_ttUIc0=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/488260899/photo/gate-to-the-mountains.jpg?s=612x612&w=0&k=20&c=EdATkqZCnwd_O7jNcCWIfgdpneIBs08XeQwOjruTSaU=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/516650459/photo/amer-fort-at-night-in-twilight-jaipur-rajastan.jpg?s=612x612&w=0&k=20&c=sucnJAMtr-a7qZMikWNi5vXA84agq6ceevJ0FQPMPrs=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1500514563/photo/details-of-amber-fort.jpg?s=612x612&w=0&k=20&c=SxDu3CNz-cgkrE_KLLAn1nj8J9oycFns_BEa6XaAi0A=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2127714327/photo/the-colourful-garden-of-jaipur.jpg?s=612x612&w=0&k=20&c=iRlfKpIzFZCdHka-2uQydEJITxu7vYZWi5RpvTFyMyY=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/468719632/photo/amber-fort-india.jpg?s=612x612&w=0&k=20&c=Qcz-VPbsn221p_UoME7udiDe7kFOEyt_CBe-fmCltNY=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1964970100/photo/the-jal-mahal-water-palace-on-man-sagar-lake-at-night-in-jaipur-rajasthan-india.jpg?s=612x612&w=0&k=20&c=_JlxFrACPJ23LmpJxgHCtBQ_koM6D5fKJ73a7cKMENw=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1193750698/photo/amber-fort-or-amer-fort-mughal-architecture-medieval-fort-made-of-yellow-sandstone-jaipur.jpg?s=612x612&w=0&k=20&c=43_Us4OrcrdUFEJdS0vAp2UrhjK5PPSiZ_72qrQ4ANg=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1461442444/photo/jaipur-amber-fort.jpg?s=612x612&w=0&k=20&c=PoEi5hrWbh408d56fqUXlePdYjK9XuqWwh43RsgskHg=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1960515313/photo/amber-palace.jpg?s=612x612&w=0&k=20&c=kXdoBB7nDVGKGmCYoexUJKvxEuvUpyp0F64v9pAGssg=" alt="Amber Fort">
+        </div>
+
+
+    </div>
+
+</body>
+</html>

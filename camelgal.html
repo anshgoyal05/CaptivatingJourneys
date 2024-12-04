@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captivating Journeys</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            grid-auto-rows: 300px;
+        }
+
+        
+        .gallery-item {
+            position: relative;
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay span {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        
+        .gallery-item:nth-child(1) {
+            background-color: #ff9a9e;
+        }
+
+        .gallery-item:nth-child(2) {
+            background-color: #fad0c4;
+        }
+
+        .gallery-item:nth-child(3) {
+            background-color: #f4e1d2;
+        }
+
+        .gallery-item:nth-child(4) {
+            background-color: #c3f7f7;
+        }
+
+        .gallery-item:nth-child(5) {
+            background-color: #b0e0e6;
+        }
+
+        .gallery-item:nth-child(6) {
+            background-color: #ffecd2;
+        }
+
+        
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-container {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Camel Safari, Jaisalmer</h1>
+
+    <div class="gallery-container">
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/182030486/photo/desert-camel-caravan-silhouette-at-sunset.jpg?s=612x612&w=0&k=20&c=_G2ezmBKMpbxI6sao1hR6LJtnJf52cw-7rJvgMp5VYk=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1224021113/photo/indian-cameleers-camel-driver-with-camel-silhouettes-in-dunes-on-sunset-jaisalmer-rajasthan.jpg?s=612x612&w=0&k=20&c=MeF2Dl4ya1NVOWM_I_xo3EPd8E-iazBghYhjiyRaTcU=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1372389714/photo/beautiful-decorated-camel-on-bikaner-camel-festival-in-rajasthan-india.jpg?s=612x612&w=0&k=20&c=fsgStzT8okAQDAgjMcoSTM1KsPUQo1Eyd43jVWYObps=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2131831735/photo/swiss-tent-at-the-thar-desert-jaisalmer-for-the-desert-safari.jpg?s=612x612&w=0&k=20&c=VQ5zs_udRzS-sZZ9KqYfYxCW1EHKJcCYG8J5Fp7QfM0=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1647224199/photo/indian-man-with-camels-on-sand-dunes-rajasthan-india.jpg?s=612x612&w=0&k=20&c=d_o8dFDD2rKyFhnv3VZ-eOUKIL_Wd9YP9usVe5tDG-M=" alt="Amber Fort">
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2164626946/photo/rajasthan-khuri-sand-dunes.jpg?s=612x612&w=0&k=20&c=osreU33KwALexQqAlWgCZOJMdzvtobVlzMJVfgIwDOA=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/108196415/photo/relax.jpg?s=612x612&w=0&k=20&c=UoPtsBxwj9luM_aDWV1bMhpvLkyIOBD3hgSPT_em_2I=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/978386578/photo/camel-caravan-going-through-the-sand-dunes-in-desert-rajasthan-india.jpg?s=612x612&w=0&k=20&c=o_6ryjIqhZUsSjZLkKr3NOKwkTuYV7CcMZdu6gw4KpQ=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2183131049/photo/silhouette-camel-at-sunset-on-the-dunes-of-the-thar-desert-jaisalmer-india.jpg?s=612x612&w=0&k=20&c=AdZXRGFbPsa2T1a-XGpi-i_JsC6YgOYYQQ9aABPvP2A=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2161510590/photo/woman-on-camel-in-the-desert-at-sunset-near-4x4-suv.jpg?s=612x612&w=0&k=20&c=Khz3Pd8DAqY4KL37brLdH9n0Ty6CfwANlbL3iyY4aLc=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2179334962/photo/female-tourist-taking-picture-of-sunset-while-riding-camel-camelus-dromedarius-at-sand-dunes.jpg?s=612x612&w=0&k=20&c=tuPrcJ4vKRQiES3Jk7nQJKRe10WGaxn27Ya8jyEWmQg=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2175563255/photo/camels-of-thar-desert-rajasthan-india.jpg?s=612x612&w=0&k=20&c=bWuOoKx8QiruTpV0YHE-AosuDL_8U2Il_sdX5NsgV0c=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2169908716/photo/tourists-with-camels-camelus-dromedarius-at-sand-dunes-of-thar-desert-rajasthan-india-camel.jpg?s=612x612&w=0&k=20&c=gHbBmBlQRzpDtg5fuDWBBy26AGbNHpxAvy8ZVwTa1Wo=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2165566287/photo/a-camel-camelus-dromedarius-looking-at-the-horizon-at-sand-dunes-of-thar-desert-rajasthan.jpg?s=612x612&w=0&k=20&c=klIw9Se3cIeeQJW4fqNztdtffELCumzhB2O2vdD0flU=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/183377233/photo/camel-safari.jpg?s=612x612&w=0&k=20&c=BwUhF8lEtTfUkwywjT1Vvy4rzwn5tOy3v8MuRcgydZU=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2156664611/photo/colorful-camel-wagon-standing-on-the-golden-sands-of-sam-with-the-setting-sun-behind-it.jpg?s=612x612&w=0&k=20&c=NARN_hl3MAslft8T3ycWB6H8LOYp4IO-NuAlxh_Wkek=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2148922315/photo/sunset-rajasthan-india.jpg?s=612x612&w=0&k=20&c=NLxT4hA6IB06AbxrjWeSF9W6BIv-V6Aydp7o_esjUWo=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2149096887/photo/camel-in-desert-at-sunset.jpg?s=612x612&w=0&k=20&c=0CuOO9hObv5xiGMCSvMojzfnHTw8S30b4usX09Xafjg=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1963114215/photo/landscape-of-jaisalmer-amazing-forts-on-sand.jpg?s=612x612&w=0&k=20&c=zC7RXCTtXC0Vxm2rXdt6fGOqX_YuwIZGwKi-v9pvKIk=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1963114735/photo/a-camel-standing-on-dessert-sam-desert-jaisalmer.jpg?s=612x612&w=0&k=20&c=w5J88LBf6g7qUct4mPhxHS8jwEbOcwNQxQqPtxPKdbk=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1387287671/photo/the-camel-fair-in-rajasthan-desert-india.jpg?s=612x612&w=0&k=20&c=qWfN5chbjT3J9tTkby8jQoKvoer5yJX-Qvt5MVCL594=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/184140175/photo/camel-rider-desert-dune-rajasthan-india.jpg?s=612x612&w=0&k=20&c=9SKmFgUyDGVc1ar3DL2jfDybdfI9hCyPodMpixafqSk=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/172446350/photo/camel-riders-in-the-desert.jpg?s=612x612&w=0&k=20&c=tuJ3yWKR3OyOTwjnFo9mkYMQ7NJLlevNqgtNa6YUMH8=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/171574088/photo/silhouette-of-camel-caravan-in-the-desert-at-sunset.jpg?s=612x612&w=0&k=20&c=138knkFgEHuUvVIvzX52uzKNtsDBtgWzZEd1ZBb3nIA=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/108312441/photo/guide-and-camel-in-the-desert.jpg?s=612x612&w=0&k=20&c=4acmV7QjVTz-j-xugC_QgZ4gZeoicJ3fuHEOWfSAVC4=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1691746608/photo/desert-camel-safari-and-jeep-safari-photography.jpg?s=612x612&w=0&k=20&c=cqgiZKlSaSa-Dj6YdsvIx8yQUEwf4-ABLQop5AhdbfE=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/183330492/photo/camel-safari-in-the-desert.jpg?s=612x612&w=0&k=20&c=Y1xjTksZ0w8_ttb76JlnZEg4FEmlR0RkatsmdDjh0Go=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1404454949/photo/decorated-camel-cart-in-indian-desert-city-pushkar-for-tourists-and-travelers.jpg?s=612x612&w=0&k=20&c=RLJcNFxEhAVOygiBaVapmBeqn-VB6rNc65LlXDaaEKc=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/626777138/photo/camel-rider-view-in-thar-desert-rajasthan-india.jpg?s=612x612&w=0&k=20&c=hh8WFbXatjAzKXyh2tQo6ZcrhKhy2pEmz-ROBYaFULk=" alt="Amber Fort">
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1139964246/photo/beautiful-decorated-camel-at-bikaner-camel-fesrival-in-rajasthan-india.jpg?s=612x612&w=0&k=20&c=4iDYXxrWCUTNSAe0_RozKzMdgzpiPSVZy0a9o70lLaU=" alt="Amber Fort">
+        </div>
+
+
+    </div>
+
+</body>
+</html>
